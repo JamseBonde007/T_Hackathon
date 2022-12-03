@@ -32,7 +32,8 @@ public class MessageController {
 
     @GetMapping("/list")
     public ResponseEntity<List<Message>> getMessages(Pageable page,
-                                                     @RequestParam Long addressee_id){
-        return ResponseEntity.ok(messageService.getMyMessages(page, addressee_id));
+                                                     @RequestParam(required = false) Long addressee_id,
+                                                     @RequestParam(required = false) Long recipient_id){
+        return ResponseEntity.ok(messageService.getMessages(page, addressee_id, recipient_id));
     }
 }
