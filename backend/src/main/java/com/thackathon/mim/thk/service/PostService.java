@@ -1,5 +1,7 @@
 package com.thackathon.mim.thk.service;
 
+import com.querydsl.core.BooleanBuilder;
+import com.querydsl.core.types.dsl.BooleanExpression;
 import com.thackathon.mim.thk.entity.Person;
 import com.thackathon.mim.thk.entity.PersonPostLikes;
 import com.thackathon.mim.thk.entity.Post;
@@ -33,11 +35,11 @@ public class PostService {
     public Post getPost(Long id) {
         return postRepository.findOne(QPost.post.id.eq(id)).orElseThrow(() -> new CustomException("Post with id not found!."));
     }
-    public List<Post> getPosts(Pageable page, Boolean visibility) {
+    public List<Post> getPosts(Pageable page, Boolean visibility, boolean postType) {
         if (visibility == null){
-            return postRepository.findAll(page).getContent();
+            return postRepository.findAll(QPost.post.postType.eq(postType), page).getContent();
         }
-        return postRepository.findAll(QPost.post.visibility.eq(visibility), page).getContent();
+        return postRepository.findAll(QPost.post.visibility.eq(visibility).and(QPost.post.postType.eq(postType)), page).getContent();
     }
 
     public void likePost(Long person_id, Long post_id, boolean like) {

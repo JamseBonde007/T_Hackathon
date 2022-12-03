@@ -42,6 +42,8 @@ public class Post implements Serializable {
 
     private LocalDate createdDate;
 
+    private boolean postType; //false -> otazka, true -> post
+
     private Boolean visibility; // false -> private, true -> public
 
     @ManyToOne
