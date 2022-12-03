@@ -1,9 +1,6 @@
 package com.thackathon.mim.thk.entity;
 
-import com.thackathon.mim.thk.enums.GenderEnum;
-import com.thackathon.mim.thk.enums.PersonTypeEnum;
 import com.thackathon.mim.thk.enums.SkillsEnum;
-import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 

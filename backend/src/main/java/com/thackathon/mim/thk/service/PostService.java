@@ -2,11 +2,13 @@ package com.thackathon.mim.thk.service;
 
 import com.thackathon.mim.thk.entity.Post;
 import com.thackathon.mim.thk.entity.QPost;
+import com.thackathon.mim.thk.exception.CustomException;
 import com.thackathon.mim.thk.repository.PostRepository;
 import lombok.NonNull;
-import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class PostService {
@@ -17,7 +19,10 @@ public class PostService {
         this.postRepository = postRepository;
     }
 
-    public Page<Post> getPosts(Pageable page, boolean visibility) {
-        return postRepository.findAll(QPost.post.visibility.eq(visibility), page);
+    public Post getPost(Long id) {
+        return postRepository.findOne(QPost.post.id.eq(id)).orElseThrow(() -> new CustomException("Nenasiel sa prispevok s danym id."));
+    }
+    public List<Post> getPosts(Pageable page, boolean visibility) {
+        return postRepository.findAll(QPost.post.visibility.eq(visibility), page).getContent();
     }
 }
