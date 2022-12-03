@@ -30,4 +30,15 @@ export class MainService {
       })
     );
   }
+  getAllPosts(): Observable<Post[]> {
+    return this.dataService.get<Post[]>(`${this.apiURL}post/list`).pipe(
+      map((res) => {
+         console.log(res);
+        return res;
+      }),
+      tap((res) => {
+        this.setPostState(res);
+      })
+    );
+  }
 }

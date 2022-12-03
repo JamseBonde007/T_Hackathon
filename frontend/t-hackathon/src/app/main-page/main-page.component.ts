@@ -16,7 +16,7 @@ export class MainPageComponent implements OnInit {
   constructor(private loginService: MainService ) { }
 
   ngOnInit(): void {
-    this.postsSubs = this.loginService.getPublicPosts().subscribe();
+    this.postsSubs = this.loginService.getAllPosts().subscribe();
   }
 
 }
