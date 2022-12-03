@@ -22,7 +22,10 @@ public class PostService {
     public Post getPost(Long id) {
         return postRepository.findOne(QPost.post.id.eq(id)).orElseThrow(() -> new CustomException("Nenasiel sa prispevok s danym id."));
     }
-    public List<Post> getPosts(Pageable page, boolean visibility) {
+    public List<Post> getPosts(Pageable page, Boolean visibility) {
+        if (visibility == null){
+            return postRepository.findAll(page).getContent();
+        }
         return postRepository.findAll(QPost.post.visibility.eq(visibility), page).getContent();
     }
 }

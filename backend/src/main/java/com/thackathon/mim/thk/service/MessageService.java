@@ -1,5 +1,6 @@
 package com.thackathon.mim.thk.service;
 
+import com.querydsl.core.types.dsl.BooleanExpression;
 import com.thackathon.mim.thk.entity.Message;
 import com.thackathon.mim.thk.entity.QMessage;
 import com.thackathon.mim.thk.exception.CustomException;
@@ -19,8 +20,18 @@ public class MessageService {
         this.messageRepository = messageRepository;
     }
 
-    public List<Message> getMyMessages(Pageable pageable, Long addressee_id) {
-        return messageRepository.findAll(QMessage.message.addressee.id.eq(addressee_id), pageable).getContent();
+    public List<Message> getMessages(Pageable pageable, Long addressee_id, Long recipient_id) {
+        BooleanExpression predicate;
+        if (addressee_id != null && recipient_id != null) {
+            throw new CustomException("Mismatch messages!");
+        } else if (addressee_id != null){
+            predicate = QMessage.message.addressee.id.eq(addressee_id);
+        } else if (recipient_id != null){
+            predicate = QMessage.message.recipient.id.eq(recipient_id);
+        } else {
+            return messageRepository.findAll(pageable).getContent();
+        }
+        return messageRepository.findAll(predicate, pageable).getContent();
     }
 
     public Message getMessage(Long id) {

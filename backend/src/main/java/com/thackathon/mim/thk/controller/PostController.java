@@ -33,7 +33,7 @@ public class PostController {
 
     @GetMapping("/list")
     public ResponseEntity<List<Post>> getPosts(Pageable page,
-                                               @RequestParam(required = false) boolean visibility){
+                                               @RequestParam(required = false) Boolean visibility){
         return ResponseEntity.ok(postService.getPosts(page, visibility));
     }
 }

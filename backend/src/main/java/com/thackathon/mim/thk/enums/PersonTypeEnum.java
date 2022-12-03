@@ -4,7 +4,8 @@ public enum PersonTypeEnum {
 
     EXPERT("Expert"),
     TEACHER("Pedagóg"),
-    STUDENT("Študent");
+    STUDENT("Študent"),
+    COMPANY("Firma");
 
     private final String value;
 

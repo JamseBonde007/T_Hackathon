@@ -1,13 +1,17 @@
 <div class="heading">
   <h1><span>Catch Them All</span> - Portál</h1>
 </div>
-<hr class="login-line">
+
+
 <div class="main-container">
+  
   <div class="posts-container">
     <app-post-preview *ngFor="let post of posts$ | async"
     [post]="post"></app-post-preview>
     
   </div>
+
+
   <div class="login-container">
     <h2>Log-in</h2>
     <form [formGroup]="loginForm" (ngSubmit)="onClickLogin(loginForm.value)" > 
