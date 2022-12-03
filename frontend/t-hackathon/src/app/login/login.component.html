@@ -6,15 +6,9 @@
 <div class="main-container">
   
   <div class="posts-container">
-    <app-post-preview></app-post-preview>
-    <app-post-preview></app-post-preview>
-    <app-post-preview></app-post-preview>
-    <app-post-preview></app-post-preview>
-    <app-post-preview></app-post-preview>
-    <app-post-preview></app-post-preview>
-    <app-post-preview></app-post-preview>
-    <app-post-preview></app-post-preview>
-    <app-post-preview></app-post-preview>
+    <app-post-preview *ngFor="let post of posts$ | async"
+    [post]="post"></app-post-preview>
+    
   </div>
 
 

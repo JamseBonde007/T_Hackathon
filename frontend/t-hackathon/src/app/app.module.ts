@@ -7,9 +7,10 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { LoginPostComponent } from './shared/post-preview/post-preview.component';
 import { LoginComponent } from './login/login.component';
+import { MainPageComponent } from './main-page/main-page.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginPostComponent, LoginComponent],
+  declarations: [AppComponent, LoginPostComponent, LoginComponent, MainPageComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
