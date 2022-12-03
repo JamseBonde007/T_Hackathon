@@ -1,0 +1,60 @@
+@import "../../lib/shared_styles/_colors.scss";
+@import "../../lib/shared_styles/_font.scss";
+
+.heading {
+  width: 100vw;
+  height: 100px;
+  // background-color: $base-color;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  h1 {
+    color: rgb(32, 21, 34);
+    font-family: "mulish-italic";
+    span {
+      font-size: 45px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.main-container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 100px;
+
+  .posts-container {
+    width: 60vw;
+    height: 80vh;
+    overflow: scroll;
+    // background-color: red;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 10px 29px 0px;
+  }
+
+  .login-container {
+    width: 30vw;
+    height: 80vh;
+    // background-color: green;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 10px 29px 0px;
+    text-align: center;
+    padding-top: 10px;
+    h2{
+      margin-bottom: 50px;
+    }
+
+    form {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+}
