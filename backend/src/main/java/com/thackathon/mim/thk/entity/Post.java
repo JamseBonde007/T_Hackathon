@@ -39,7 +39,7 @@ public class Post implements Serializable {
 
     private LocalDate createdDate;
 
-    private Boolean visibility;
+    private Boolean visibility; // false -> private, true -> public
 
     @ManyToOne
     @JoinColumn(name = "publisher_id", referencedColumnName = "id")
