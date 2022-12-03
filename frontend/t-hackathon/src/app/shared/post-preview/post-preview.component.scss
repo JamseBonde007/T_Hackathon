@@ -1,5 +1,11 @@
 @import "../../../lib/shared_styles/_colors.scss";
 @import "../../../lib/shared_styles/_font.scss";
+
+
+
+
+
+
 .post-container {
   width: 100%;
 
@@ -11,15 +17,82 @@
   margin-bottom: 10px;
   border-radius: 8px;
 
-  h2{
-    margin-bottom: 20px;
-    color: $top_nav;
+
+  .img{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width:  150px;
+    height: auto;
+    background-size: cover;
+    margin-top: 30px;
+    padding-right: 30px;
+    
   }
 
-  h3{
+
+
+  hr{
+    width: 60%;
+    border: 1px solid $post_card;
+    
+  }
+
+
+
+  .content{
+    width: 70%;
+  
+
+  }
+
+  p{
+    color: $text;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  h2{
+    color: black;
+    
+  }
+
+
+  i{
+    bottom: 15px;
+    right: 20px;
+    font-size: 30px;
+    color: red;
+  }
+  
+  .like{
+    position: absolute;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+   
+  }
+
+  .like:hover{
+    transform: scale(1.08);
+  }
+
+
+  
+  
+  .likeM{
+    right: 70px;
+    bottom: 20px;
+    color: $top_nav;
+  }
+  
+
+ 
+  .rola{
     position: absolute;
     bottom: 20px;
+    left: 80px;
     color: black;
+  
 
     span{
       font-family: "mulish";
@@ -27,4 +100,13 @@
     }
 
   }
+
+  .user{
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    width: 40px;
+  }
+
 }
+
