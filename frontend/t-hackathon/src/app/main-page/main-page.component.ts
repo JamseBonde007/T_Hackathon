@@ -25,4 +25,8 @@ export class MainPageComponent implements OnInit {
     this.router.navigateByUrl('/mainPage/postDetail');
   }
 
+  onLogout(){
+    this.router.navigateByUrl('/login');
+  }
+
 }

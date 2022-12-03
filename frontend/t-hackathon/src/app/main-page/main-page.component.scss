@@ -8,13 +8,17 @@
   //background-color: $top_nav;
   //box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   position: fixed;
   left: 0;
   top: 0;
   padding: 40px;
   border-bottom: 1px solid $post_card;
+
+  a{
+    cursor: pointer;
+  }
 
   h1 {
     color: $top_nav;
@@ -25,6 +29,28 @@
       float: left;
     }
   }
+
+  .menu-container{
+
+    display: flex;
+    padding-right: 10%;
+
+    img{
+      width: 30px;
+      transition: 0.3s ease-in-out;
+      margin-right: 50px;
+    }
+    img:hover{
+      transform: scale(1.1);
+    }
+  
+    .home{
+      margin-right: 30px;
+      font-size: 25px
+    };
+  }
+
+  
 }
 
 .main-container {
