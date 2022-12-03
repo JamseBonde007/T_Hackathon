@@ -26,7 +26,7 @@ public class JobService {
         this.personService = personService;
     }
     public Job getJob(Long id) {
-        return jobRepository.findOne(QJob.job.id.eq(id)).orElseThrow(() -> new CustomException("Nenasla sa praca s danym id."));
+        return jobRepository.findOne(QJob.job.id.eq(id)).orElseThrow(() -> new CustomException("Job with id not found!"));
     }
 
     public List<Job> findJobs(Pageable page, Long person_id, String jobType) {

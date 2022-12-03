@@ -24,6 +24,6 @@ public class CommentService {
     }
 
     public Comment getComment(Long id) {
-        return commentRepository.findOne(QComment.comment.id.eq(id)).orElseThrow(() -> new CustomException("Nenasla sa osoba s danym id."));
+        return commentRepository.findOne(QComment.comment.id.eq(id)).orElseThrow(() -> new CustomException("Comment with id not found!"));
     }
 }
