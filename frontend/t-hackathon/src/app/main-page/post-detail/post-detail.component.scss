@@ -1,0 +1,76 @@
+@import "../../../lib/shared_styles/_colors.scss";
+@import "../../../lib/shared_styles/_font.scss";
+
+.posts-container {
+  width: 63vw;
+  height: 80vh;
+  overflow: scroll;
+
+  padding: 0;
+  // background-color: red;
+  // box-shadow: rgba(100, 100, 111, 0.2) 0px 10px 29px 0px;
+  border: 1px solid $post_card;
+  border-radius: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+
+  hr {
+    width: 60%;
+  }
+
+  .publisher-container {
+    width: 80%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 3xp solid red;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+
+    .publisher-info {
+      h2 {
+        font-size: 55px;
+      }
+
+      .publisher-email {
+        font-family: "mulish-italic";
+        font-size: 20px;
+        margin-bottom: 30px;
+      }
+    }
+
+    .publisher-photo {
+      width: 30%;
+      // border: 3px solid red;
+      img {
+        width: 300px;
+      }
+    }
+
+    .publisher-skills {
+      display: flex;
+
+      p{
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .long-text-container{
+    width: 80%;
+    margin-top: 50px;
+    font-size: 20px;
+
+    p{
+      font-family: "mulish-light";
+    }
+    h2{
+      margin-bottom: 30px;
+    }
+
+
+  }
+}

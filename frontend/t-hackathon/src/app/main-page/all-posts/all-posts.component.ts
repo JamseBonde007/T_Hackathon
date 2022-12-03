@@ -1,20 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Observable, Subscription } from 'rxjs';
-import { Post } from '../shared/model/post.model';
-import {  MainService } from '../shared/service/main-service.service';
+import { Post } from 'src/app/shared/model/post.model';
+import { MainService } from 'src/app/shared/service/main-service.service';
 
 @Component({
-  selector: 'app-main-page',
-  templateUrl: './main-page.component.html',
-  styleUrls: ['./main-page.component.scss']
+  selector: 'app-all-posts',
+  templateUrl: './all-posts.component.html',
+  styleUrls: ['./all-posts.component.scss']
 })
-export class MainPageComponent implements OnInit {
+export class AllPostsComponent implements OnInit {
+
   posts$: Observable<Post[]> = this.loginService.postState$;
 
   postsSubs: Subscription;
 
-  constructor(private loginService: MainService, private router: Router ) { }
+  constructor(private loginService: MainService, private router: Router) { }
 
   ngOnInit(): void {
     this.postsSubs = this.loginService.getAllPosts().subscribe();

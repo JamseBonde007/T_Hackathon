@@ -3,6 +3,7 @@ import { MainService } from '../shared/service/main-service.service';
 import { FormGroup, FormControl } from '@angular/forms';
 import { Observable, Subscription } from 'rxjs';
 import { Post } from '../shared/model/post.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -17,7 +18,7 @@ export class LoginComponent implements OnInit, OnDestroy {
 
   postsSubs: Subscription;
 
-  constructor(private loginService: MainService) {}
+  constructor(private loginService: MainService, private router: Router) {}
 
   ngOnInit(): void {
     this.loginForm = new FormGroup({
@@ -29,7 +30,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   onClickLogin(data: any): void {
-    console.log(this.posts$);
+    this.router.navigateByUrl('/mainPage');
     
   }
 
