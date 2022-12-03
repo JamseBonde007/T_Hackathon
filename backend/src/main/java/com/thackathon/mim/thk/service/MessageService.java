@@ -35,6 +35,6 @@ public class MessageService {
     }
 
     public Message getMessage(Long id) {
-        return messageRepository.findOne(QMessage.message.id.eq(id)).orElseThrow(() -> new CustomException("Nenasla sa osoba s danym id."));
+        return messageRepository.findOne(QMessage.message.id.eq(id)).orElseThrow(() -> new CustomException("Message with id not found!"));
     }
 }
