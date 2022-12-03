@@ -2,52 +2,73 @@
 @import "../../lib/shared_styles/_font.scss";
 
 .heading {
+  background-color: white;
   width: 100vw;
-  height: 100px;
-  // background-color: $base-color;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  height: 40px;
+  //background-color: $top_nav;
+  //box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   position: fixed;
   left: 0;
   top: 0;
+  padding: 40px;
+  border-bottom: 1px solid $post_card;
 
   h1 {
-    color: rgb(32, 21, 34);
+    color: $top_nav;
     font-family: "mulish-italic";
     span {
-      font-size: 45px;
+      font-size: 40px;
       text-transform: uppercase;
+      float: left;
     }
   }
 }
 
 .main-container {
   width: 100vw;
-  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  min-height: 98vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 90px;
 
   .posts-container {
-    width: 60vw;
+    width: 63vw;
     height: 80vh;
     overflow: scroll;
+
+    padding: 0;
     // background-color: red;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 10px 29px 0px;
+    // box-shadow: rgba(100, 100, 111, 0.2) 0px 10px 29px 0px;
   }
 
   .login-container {
+    background-color: $login;
     width: 30vw;
     height: 80vh;
+    border-radius: 8px;
     // background-color: green;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 10px 29px 0px;
+    //box-shadow: rgba(100, 100, 111, 0.2) 0px 10px 29px 0px;
     text-align: center;
-    padding-top: 10px;
+
     h2 {
-      margin-bottom: 50px;
+      margin: 40px;
+      color: white;
+      margin-left: 60%;
+      font-family: "mulish-bold";
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 80%;
+      border-radius: 8px;
+      height: 40px;
+      border: none;
     }
 
     form {
@@ -55,6 +76,28 @@
       justify-content: space-around;
       align-items: center;
       flex-direction: column;
+    }
+    label {
+      color: white;
+      float: left;
+      margin: 10px;
+      margin-top: 30px;
+      font-size: 17px;
+    }
+
+    input[type="submit"] {
+      background-color: $neznam;
+      color: white;
+      width: 40%;
+      border: none;
+      height: 40px;
+      margin-top: 30px;
+      margin-bottom: 7px;
+      font-size: 17px;
+    }
+
+    a {
+      color: white;
     }
   }
 }

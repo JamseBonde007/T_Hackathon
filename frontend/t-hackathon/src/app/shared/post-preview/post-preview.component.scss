@@ -1,0 +1,30 @@
+@import "../../../lib/shared_styles/_colors.scss";
+@import "../../../lib/shared_styles/_font.scss";
+.post-container {
+  width: 100%;
+
+  background-color: white;
+  margin: auto;
+  padding: 20px 20px 50px 20px;
+  position: relative;
+  border: 1px solid $post_card;
+  margin-bottom: 10px;
+  border-radius: 8px;
+
+  h2{
+    margin-bottom: 20px;
+    color: $top_nav;
+  }
+
+  h3{
+    position: absolute;
+    bottom: 20px;
+    color: black;
+
+    span{
+      font-family: "mulish";
+      color: $top_nav;
+    }
+
+  }
+}

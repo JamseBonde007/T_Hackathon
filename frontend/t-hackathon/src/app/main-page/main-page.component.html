@@ -4,13 +4,10 @@
 <hr class="login-line" />
 <div class="main-container">
   <div class="posts-container">
-    <app-post-preview></app-post-preview>
-    <app-post-preview></app-post-preview>
-    <app-post-preview></app-post-preview>
-    <app-post-preview></app-post-preview>
-    <app-post-preview></app-post-preview>
+    <app-post-preview *ngFor="let post of posts$ | async"
+    [post]="post"></app-post-preview>
   </div>
   <div class="login-container">
-    <h2>Log-in</h2>
+    <h2>Ahojky</h2>
   </div>
 </div>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable, Subscription } from 'rxjs';
+import { Post } from '../shared/model/post.model';
 import {  MainService } from '../shared/service/main-service.service';
 
 @Component({
@@ -7,11 +9,14 @@ import {  MainService } from '../shared/service/main-service.service';
   styleUrls: ['./main-page.component.scss']
 })
 export class MainPageComponent implements OnInit {
+  posts$: Observable<Post[]> = this.loginService.postState$;
 
-  constructor(private mainService: MainService ) { }
+  postsSubs: Subscription;
+
+  constructor(private loginService: MainService ) { }
 
   ngOnInit(): void {
-
+    this.postsSubs = this.loginService.getPublicPosts().subscribe();
   }
 
 }

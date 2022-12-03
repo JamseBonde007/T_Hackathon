@@ -10,14 +10,16 @@
   </div>
   <div class="login-container">
     <h2>Log-in</h2>
-
     <form [formGroup]="loginForm" (ngSubmit)="onClickLogin(loginForm.value)" > 
-      <input type= "text"  name="userName" placeholder="userName" 
+      <label for="fname">Meno</label>
+      <input type= "text"  name="userName" placeholder="" 
          formControlName = "userName"> 
-      <input type= "password"  name="pass" placeholder="pass" 
+         <label for="fname">Heslo</label>
+         <input type= "password"  name="pass" placeholder="" 
          formControlName = "pass"> 
-      <input type="submit"  value="Click here"> 
+      <input type="submit"  value="Log-in"> 
    </form>
+   <a href=>Registruj sa</a>
 
   </div>
 </div>
