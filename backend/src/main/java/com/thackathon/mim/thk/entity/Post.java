@@ -50,7 +50,4 @@ public class Post implements Serializable {
 
     @OneToMany(mappedBy = "post", fetch = FetchType.LAZY)
     private List<Comment> commentList = new ArrayList<>();
-
-    @ManyToMany
-    private List<Person> personWhoLikes;
 }
