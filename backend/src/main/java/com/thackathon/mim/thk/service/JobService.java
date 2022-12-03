@@ -15,7 +15,9 @@ import com.thackathon.mim.thk.exception.CustomException;
 import com.thackathon.mim.thk.repository.JobRepository;
 import com.thackathon.mim.thk.repository.PersonPostLikesRepository;
 import lombok.NonNull;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
@@ -83,16 +85,16 @@ public class JobService {
 
         likedPostsByUser.forEach(lp -> {
             for (SkillsEnum value : SkillsEnum.values()) {
-                if (lp.getName().contains(DELIMITER + value.value().toLowerCase(Locale.ROOT))
-                        || lp.getName().toLowerCase(Locale.ROOT).equals(DELIMITER + value.value().toLowerCase(Locale.ROOT))){
+                if (lp.getName().contains(value.value().toLowerCase(Locale.ROOT))
+                        || lp.getName().toLowerCase(Locale.ROOT).equals(value.value().toLowerCase(Locale.ROOT))){
                     if (extractedSkillsFromPosts.containsKey(value)){
                         extractedSkillsFromPosts.put(value, extractedSkillsFromPosts.get(value) + 1);
                     } else {
                         extractedSkillsFromPosts.put(value, 1L);
                     }
                 }
-                if (lp.getContent().contains(DELIMITER + value.value().toLowerCase(Locale.ROOT))
-                        || lp.getContent().toLowerCase(Locale.ROOT).contains(DELIMITER + value.value().toLowerCase(Locale.ROOT))){
+                if (lp.getContent().contains(value.value().toLowerCase(Locale.ROOT))
+                        || lp.getContent().toLowerCase(Locale.ROOT).contains(value.value().toLowerCase(Locale.ROOT))){
                     if (extractedSkillsFromPosts.containsKey(value)){
                         extractedSkillsFromPosts.put(value, extractedSkillsFromPosts.get(value) + 1);
                     } else {
@@ -103,17 +105,24 @@ public class JobService {
         });
 
         /** prepocitat ake technologie sa najviac spominali a zistit tym interest **/
-        SkillsEnum highestValue = Collections.max(extractedSkillsFromPosts.entrySet(), (entry1, entry2) -> entry1.getValue().intValue() - entry2.getValue().intValue()).getKey();
+        if (!extractedSkillsFromPosts.isEmpty()) {
+            SkillsEnum highestValue = Collections.max(extractedSkillsFromPosts.entrySet(), (entry1, entry2) -> entry1.getValue().intValue() - entry2.getValue().intValue()).getKey();
+            Long maxInterest = extractedSkillsFromPosts.get(highestValue);
+            person.getSkills().forEach(skillsEnum -> extractedSkillsFromPosts.put(skillsEnum, maxInterest));
+        } else {
+            person.getSkills().forEach(skillsEnum -> extractedSkillsFromPosts.put(skillsEnum, 1L));
+        }
 
-        Long maxInterest = extractedSkillsFromPosts.get(highestValue);
+        List<Long> idsJobsForSpecificType = jobRepository.findAll(builder, Pageable.unpaged()).getContent().stream().map(Job::getId).toList();
 
-        person.getSkills().forEach(skillsEnum -> extractedSkillsFromPosts.put(skillsEnum, maxInterest));
         HashMap<SkillsEnum, Long> sortedSkills = sortByValue(extractedSkillsFromPosts);
-        person.getSkills().forEach(skillsEnum -> {
-            builder.and(QJob.job.name.contains(skillsEnum.value().toLowerCase(Locale.ROOT))
-                    .or(QJob.job.description.contains(skillsEnum.value().toLowerCase(Locale.ROOT))));
+        BooleanBuilder finalBuilder = new BooleanBuilder();
+        sortedSkills.forEach((key, value) -> {
+            finalBuilder.or(QJob.job.name.contains(DELIMITER + key.value().toLowerCase(Locale.ROOT))
+                    .or(QJob.job.description.contains(DELIMITER + key.value().toLowerCase(Locale.ROOT))));
         });
-        return jobRepository.findAll(builder, page).getContent();
+        finalBuilder.and(QJob.job.id.in(idsJobsForSpecificType));
+        return jobRepository.findAll(finalBuilder, page).getContent();
     }
 
     public static HashMap<SkillsEnum, Long> sortByValue(HashMap<SkillsEnum, Long> hm) {
