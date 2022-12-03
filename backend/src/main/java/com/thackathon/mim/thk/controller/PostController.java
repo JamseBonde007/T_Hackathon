@@ -36,4 +36,12 @@ public class PostController {
                                                @RequestParam(required = false) Boolean visibility){
         return ResponseEntity.ok(postService.getPosts(page, visibility));
     }
+
+    @GetMapping("/like")
+    public ResponseEntity<Void> likePost(@RequestParam Long person_id,
+                                         @RequestParam Long post_id,
+                                         @RequestParam boolean like){
+        postService.likePost(person_id, post_id, like);
+        return ResponseEntity.ok().build();
+    }
 }
