@@ -33,8 +33,9 @@ public class PostController {
 
     @GetMapping("/list")
     public ResponseEntity<List<Post>> getPosts(Pageable page,
-                                               @RequestParam(required = false) Boolean visibility){
-        return ResponseEntity.ok(postService.getPosts(page, visibility));
+                                               @RequestParam(required = false) Boolean visibility,
+                                               @RequestParam boolean postType){
+        return ResponseEntity.ok(postService.getPosts(page, visibility, postType));
     }
 
     @GetMapping("/like")

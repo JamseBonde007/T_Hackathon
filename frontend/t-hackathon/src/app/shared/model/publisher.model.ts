@@ -6,5 +6,6 @@ export interface Publisher {
   password: string;
   type: string;
   gender: string;
+  skills: string[]
 
 }

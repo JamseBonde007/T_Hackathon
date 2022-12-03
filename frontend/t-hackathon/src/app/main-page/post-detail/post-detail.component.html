@@ -1,13 +1,11 @@
 <div class="posts-container">
   <div class="publisher-container">
     <div class="publisher-info">
-      <h2>Michal Popovic</h2>
-      <p class="publisher-email">example@example.sk</p>
+      <h2>{{currentPost$.publisher.name}} {{currentPost$.publisher.lastname}}</h2>
+      <p class="publisher-email">{{currentPost$.publisher.email}}</p>
       <h3>Skills</h3>
       <div class="publisher-skills">
-        <p>ANGULAR,</p>
-        <p>ANGULAR,</p>
-        <p>ANGULAR </p>
+        <p *ngFor="let skill of currentPost$.publisher.skills" >{{skill}},</p>
       </div>
     </div>
     <div class="publisher-photo">
@@ -17,7 +15,7 @@
   <hr>
 
   <div class="long-text-container">
-    <h2>Cigansky sen</h2>
+    <h2>{{currentPost$.name}}</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur corporis perspiciatis veniam ea exercitationem quam odit fuga pariatur, illum ducimus esse minus a molestiae vel placeat libero officiis, quidem adipisci similique quia temporibus asperiores, vitae rem! Alias ab atque maiores quia quidem animi, itaque praesentium commodi fugiat placeat ratione culpa, dolor ipsum ullam modi provident reprehenderit reiciendis, possimus temporibus impedit hic! Omnis, perferendis dolores! Iusto obcaecati fugit in facere, sunt quod omnis assumenda repellat maiores labore vero molestias optio. Minima quos laboriosam vitae consequuntur, dolorem voluptatum molestias. Placeat maiores id laboriosam optio! Repellendus placeat officiis, velit debitis voluptate distinctio dignissimos?</p>
   </div>
 </div>

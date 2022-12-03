@@ -1,0 +1,28 @@
+@import "../../../lib/shared_styles/_colors.scss";
+@import "../../../lib/shared_styles/font.scss";
+
+.heading {
+  background-color: white;
+  width: 100vw;
+  height: 40px;
+  //background-color: $top_nav;
+  //box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 40px;
+  border-bottom: 1px solid $post_card;
+
+  h1 {
+    color: $top_nav;
+    font-family: "mulish-italic";
+    span {
+      font-size: 40px;
+      text-transform: uppercase;
+      float: left;
+    }
+  }
+}

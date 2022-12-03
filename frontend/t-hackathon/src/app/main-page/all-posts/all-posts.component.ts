@@ -19,11 +19,13 @@ export class AllPostsComponent implements OnInit {
 
   ngOnInit(): void {
     this.postsSubs = this.loginService.getAllPosts().subscribe();
+    // console.log(this.posts$);
+    
   }
 
   openPostDetail(){
-    console.log("ahoj");
-    this.router.navigateByUrl('/mainPage/postDetail');
+    // console.log("ahoj");
+    // this.router.navigateByUrl('/mainPage/postDetail');
   }
 
 }

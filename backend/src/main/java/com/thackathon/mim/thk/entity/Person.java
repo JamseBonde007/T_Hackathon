@@ -10,11 +10,8 @@ import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.ManyToMany;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -46,8 +43,5 @@ public class Person implements Serializable {
     @ElementCollection(targetClass = SkillsEnum.class)
     @Enumerated(EnumType.STRING)
     private List<SkillsEnum> skills = new ArrayList<>();
-
-    @ManyToMany
-    private List<Post> likedPosts = new ArrayList<>();
 
 }

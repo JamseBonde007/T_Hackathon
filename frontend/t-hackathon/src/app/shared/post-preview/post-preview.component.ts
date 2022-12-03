@@ -1,5 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Post } from '../model/post.model';
+import { MainService } from '../service/main-service.service';
 
 @Component({
   selector: 'app-post-preview',
@@ -8,7 +10,12 @@ import { Post } from '../model/post.model';
 })
 export class LoginPostComponent implements OnInit {
   @Input() post: Post;
-  constructor() {}
+  constructor(private mainService: MainService, private router: Router) {}
 
   ngOnInit(): void {}
+
+  setCurrentPost(): void {
+    this.mainService.setCurrentPost(this.post);
+    this.router.navigateByUrl('/mainPage/postDetail');
+  }
 }

@@ -13,8 +13,16 @@ export class MainService {
   private readonly _postSource = new BehaviorSubject<Post[]>([]);
   readonly postState$ = this._postSource.asObservable();
 
+  //current country
+  private readonly _currentPost = new BehaviorSubject<Post>(null);
+  readonly currentPostState$ = this._currentPost.asObservable();
+
   setPostState(state: Post[]): void {
     this._postSource.next(state);
+  }
+
+  setCurrentPost(currentPost: Post): void {
+    this._currentPost.next(currentPost);
   }
 
   constructor(private readonly dataService: DataService) {}
@@ -33,7 +41,7 @@ export class MainService {
   getAllPosts(): Observable<Post[]> {
     return this.dataService.get<Post[]>(`${this.apiURL}post/list`).pipe(
       map((res) => {
-         console.log(res);
+          console.log(res);
         return res;
       }),
       tap((res) => {
