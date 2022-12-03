@@ -30,7 +30,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   onClickLogin(data: any): void {
-    this.router.navigateByUrl('/mainPage');
+    this.router.navigateByUrl('/mainPage/allPosts');
     
   }
 
