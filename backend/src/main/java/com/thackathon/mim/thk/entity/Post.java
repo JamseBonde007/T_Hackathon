@@ -42,6 +42,8 @@ public class Post implements Serializable {
 
     private LocalDate createdDate;
 
+    private boolean postType; //false -> otazka, true -> post
+
     private Boolean visibility; // false -> private, true -> public
 
     @ManyToOne
@@ -50,7 +52,4 @@ public class Post implements Serializable {
 
     @OneToMany(mappedBy = "post", fetch = FetchType.LAZY)
     private List<Comment> commentList = new ArrayList<>();
-
-    @ManyToMany
-    private List<Person> personWhoLikes;
 }
