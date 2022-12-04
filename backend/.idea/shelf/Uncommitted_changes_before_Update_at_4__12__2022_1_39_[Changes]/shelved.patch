@@ -1,0 +1,908 @@
+Index: .idea/misc.xml
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+deleted file mode 100644
+--- a/.idea/misc.xml	(revision 1e27937a82105c647fc4ca9eeeab9bd9f5b3c4c5)
++++ /dev/null	(revision 1e27937a82105c647fc4ca9eeeab9bd9f5b3c4c5)
+@@ -1,15 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ExternalStorageConfigurationManager" enabled="true" />
+-  <component name="MavenProjectsManager">
+-    <option name="originalFiles">
+-      <list>
+-        <option value="$PROJECT_DIR$/pom.xml" />
+-      </list>
+-    </option>
+-  </component>
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="corretto-17" project-jdk-type="JavaSDK" />
+-  <component name="ProjectType">
+-    <option name="id" value="jpab" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst b/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+deleted file mode 100644
+--- a/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst	(revision 1e27937a82105c647fc4ca9eeeab9bd9f5b3c4c5)
++++ /dev/null	(revision 1e27937a82105c647fc4ca9eeeab9bd9f5b3c4c5)
+@@ -1,31 +0,0 @@
+-C:\THE\T_Hackathon\backend\src\main\java\com\thackathon\mim\thk\exception\CustomException.java
+-C:\THE\T_Hackathon\backend\src\main\java\com\thackathon\mim\thk\controller\MessageController.java
+-C:\THE\T_Hackathon\backend\src\main\java\com\thackathon\mim\thk\service\JobService.java
+-C:\THE\T_Hackathon\backend\src\main\java\com\thackathon\mim\thk\enums\SkillsEnum.java
+-C:\THE\T_Hackathon\backend\target\generated-sources\com\thackathon\mim\thk\entity\QPerson.java
+-C:\THE\T_Hackathon\backend\src\main\java\com\thackathon\mim\thk\controller\PostController.java
+-C:\THE\T_Hackathon\backend\src\main\java\com\thackathon\mim\thk\controller\JobController.java
+-C:\THE\T_Hackathon\backend\src\main\java\com\thackathon\mim\thk\entity\Post.java
+-C:\THE\T_Hackathon\backend\src\main\java\com\thackathon\mim\thk\enums\PersonTypeEnum.java
+-C:\THE\T_Hackathon\backend\src\main\java\com\thackathon\mim\thk\Main.java
+-C:\THE\T_Hackathon\backend\src\main\java\com\thackathon\mim\thk\service\PostService.java
+-C:\THE\T_Hackathon\backend\target\generated-sources\com\thackathon\mim\thk\entity\QMessage.java
+-C:\THE\T_Hackathon\backend\src\main\java\com\thackathon\mim\thk\service\MessageService.java
+-C:\THE\T_Hackathon\backend\src\main\java\com\thackathon\mim\thk\enums\JobTypeEnum.java
+-C:\THE\T_Hackathon\backend\src\main\java\com\thackathon\mim\thk\repository\PersonRepository.java
+-C:\THE\T_Hackathon\backend\src\main\java\com\thackathon\mim\thk\repository\MessageRepository.java
+-C:\THE\T_Hackathon\backend\target\generated-sources\com\thackathon\mim\thk\entity\QComment.java
+-C:\THE\T_Hackathon\backend\target\generated-sources\com\thackathon\mim\thk\entity\QPost.java
+-C:\THE\T_Hackathon\backend\src\main\java\com\thackathon\mim\thk\repository\JobRepository.java
+-C:\THE\T_Hackathon\backend\src\main\java\com\thackathon\mim\thk\enums\GenderEnum.java
+-C:\THE\T_Hackathon\backend\src\main\java\com\thackathon\mim\thk\service\PersonService.java
+-C:\THE\T_Hackathon\backend\src\main\java\com\thackathon\mim\thk\repository\CommentRepository.java
+-C:\THE\T_Hackathon\backend\src\main\java\com\thackathon\mim\thk\entity\Job.java
+-C:\THE\T_Hackathon\backend\target\generated-sources\com\thackathon\mim\thk\entity\QJob.java
+-C:\THE\T_Hackathon\backend\src\main\java\com\thackathon\mim\thk\entity\Person.java
+-C:\THE\T_Hackathon\backend\src\main\java\com\thackathon\mim\thk\service\CommentService.java
+-C:\THE\T_Hackathon\backend\src\main\java\com\thackathon\mim\thk\controller\PersonController.java
+-C:\THE\T_Hackathon\backend\src\main\java\com\thackathon\mim\thk\entity\Comment.java
+-C:\THE\T_Hackathon\backend\src\main\java\com\thackathon\mim\thk\controller\CommentController.java
+-C:\THE\T_Hackathon\backend\src\main\java\com\thackathon\mim\thk\repository\PostRepository.java
+-C:\THE\T_Hackathon\backend\src\main\java\com\thackathon\mim\thk\entity\Message.java
+Index: target/generated-sources/com/thackathon/mim/thk/entity/QComment.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/target/generated-sources/com/thackathon/mim/thk/entity/QComment.java b/target/generated-sources/com/thackathon/mim/thk/entity/QComment.java
+deleted file mode 100644
+--- a/target/generated-sources/com/thackathon/mim/thk/entity/QComment.java	(revision 1e27937a82105c647fc4ca9eeeab9bd9f5b3c4c5)
++++ /dev/null	(revision 1e27937a82105c647fc4ca9eeeab9bd9f5b3c4c5)
+@@ -1,58 +0,0 @@
+-package com.thackathon.mim.thk.entity;
+-
+-import static com.querydsl.core.types.PathMetadataFactory.*;
+-
+-import com.querydsl.core.types.dsl.*;
+-
+-import com.querydsl.core.types.PathMetadata;
+-import javax.annotation.Generated;
+-import com.querydsl.core.types.Path;
+-import com.querydsl.core.types.dsl.PathInits;
+-
+-
+-/**
+- * QComment is a Querydsl query type for Comment
+- */
+-@Generated("com.querydsl.codegen.EntitySerializer")
+-public class QComment extends EntityPathBase<Comment> {
+-
+-    private static final long serialVersionUID = -125117654L;
+-
+-    private static final PathInits INITS = PathInits.DIRECT2;
+-
+-    public static final QComment comment = new QComment("comment");
+-
+-    public final StringPath content = createString("content");
+-
+-    public final NumberPath<Long> id = createNumber("id", Long.class);
+-
+-    public final QPost post;
+-
+-    public final QPerson publisher;
+-
+-    public final DatePath<java.time.LocalDate> timestamp = createDate("timestamp", java.time.LocalDate.class);
+-
+-    public QComment(String variable) {
+-        this(Comment.class, forVariable(variable), INITS);
+-    }
+-
+-    public QComment(Path<? extends Comment> path) {
+-        this(path.getType(), path.getMetadata(), path.getMetadata().isRoot() ? INITS : PathInits.DEFAULT);
+-    }
+-
+-    public QComment(PathMetadata metadata) {
+-        this(metadata, metadata.isRoot() ? INITS : PathInits.DEFAULT);
+-    }
+-
+-    public QComment(PathMetadata metadata, PathInits inits) {
+-        this(Comment.class, metadata, inits);
+-    }
+-
+-    public QComment(Class<? extends Comment> type, PathMetadata metadata, PathInits inits) {
+-        super(type, metadata, inits);
+-        this.post = inits.isInitialized("post") ? new QPost(forProperty("post"), inits.get("post")) : null;
+-        this.publisher = inits.isInitialized("publisher") ? new QPerson(forProperty("publisher")) : null;
+-    }
+-
+-}
+-
+Index: target/generated-sources/com/thackathon/mim/thk/entity/QPerson.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/target/generated-sources/com/thackathon/mim/thk/entity/QPerson.java b/target/generated-sources/com/thackathon/mim/thk/entity/QPerson.java
+deleted file mode 100644
+--- a/target/generated-sources/com/thackathon/mim/thk/entity/QPerson.java	(revision 1e27937a82105c647fc4ca9eeeab9bd9f5b3c4c5)
++++ /dev/null	(revision 1e27937a82105c647fc4ca9eeeab9bd9f5b3c4c5)
+@@ -1,52 +0,0 @@
+-package com.thackathon.mim.thk.entity;
+-
+-import static com.querydsl.core.types.PathMetadataFactory.*;
+-
+-import com.querydsl.core.types.dsl.*;
+-
+-import com.querydsl.core.types.PathMetadata;
+-import javax.annotation.Generated;
+-import com.querydsl.core.types.Path;
+-import com.querydsl.core.types.dsl.PathInits;
+-
+-
+-/**
+- * QPerson is a Querydsl query type for Person
+- */
+-@Generated("com.querydsl.codegen.EntitySerializer")
+-public class QPerson extends EntityPathBase<Person> {
+-
+-    private static final long serialVersionUID = -610768598L;
+-
+-    public static final QPerson person = new QPerson("person");
+-
+-    public final StringPath email = createString("email");
+-
+-    public final StringPath gender = createString("gender");
+-
+-    public final NumberPath<Long> id = createNumber("id", Long.class);
+-
+-    public final StringPath lastname = createString("lastname");
+-
+-    public final StringPath name = createString("name");
+-
+-    public final StringPath password = createString("password");
+-
+-    public final ListPath<com.thackathon.mim.thk.enums.SkillsEnum, EnumPath<com.thackathon.mim.thk.enums.SkillsEnum>> skills = this.<com.thackathon.mim.thk.enums.SkillsEnum, EnumPath<com.thackathon.mim.thk.enums.SkillsEnum>>createList("skills", com.thackathon.mim.thk.enums.SkillsEnum.class, EnumPath.class, PathInits.DIRECT2);
+-
+-    public final StringPath type = createString("type");
+-
+-    public QPerson(String variable) {
+-        super(Person.class, forVariable(variable));
+-    }
+-
+-    public QPerson(Path<? extends Person> path) {
+-        super(path.getType(), path.getMetadata());
+-    }
+-
+-    public QPerson(PathMetadata metadata) {
+-        super(Person.class, metadata);
+-    }
+-
+-}
+-
+Index: .idea/jarRepositories.xml
+===================================================================
+diff --git a/.idea/jarRepositories.xml b/.idea/jarRepositories.xml
+deleted file mode 100644
+--- a/.idea/jarRepositories.xml	(revision 1e27937a82105c647fc4ca9eeeab9bd9f5b3c4c5)
++++ /dev/null	(revision 1e27937a82105c647fc4ca9eeeab9bd9f5b3c4c5)
+@@ -1,20 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="RemoteRepositoriesConfiguration">
+-    <remote-repository>
+-      <option name="id" value="central" />
+-      <option name="name" value="Central Repository" />
+-      <option name="url" value="https://repo.maven.apache.org/maven2" />
+-    </remote-repository>
+-    <remote-repository>
+-      <option name="id" value="central" />
+-      <option name="name" value="Maven Central repository" />
+-      <option name="url" value="https://repo1.maven.org/maven2" />
+-    </remote-repository>
+-    <remote-repository>
+-      <option name="id" value="jboss.community" />
+-      <option name="name" value="JBoss Community repository" />
+-      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+-    </remote-repository>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: target/generated-sources/com/thackathon/mim/thk/entity/QMessage.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/target/generated-sources/com/thackathon/mim/thk/entity/QMessage.java b/target/generated-sources/com/thackathon/mim/thk/entity/QMessage.java
+deleted file mode 100644
+--- a/target/generated-sources/com/thackathon/mim/thk/entity/QMessage.java	(revision 1e27937a82105c647fc4ca9eeeab9bd9f5b3c4c5)
++++ /dev/null	(revision 1e27937a82105c647fc4ca9eeeab9bd9f5b3c4c5)
+@@ -1,58 +0,0 @@
+-package com.thackathon.mim.thk.entity;
+-
+-import static com.querydsl.core.types.PathMetadataFactory.*;
+-
+-import com.querydsl.core.types.dsl.*;
+-
+-import com.querydsl.core.types.PathMetadata;
+-import javax.annotation.Generated;
+-import com.querydsl.core.types.Path;
+-import com.querydsl.core.types.dsl.PathInits;
+-
+-
+-/**
+- * QMessage is a Querydsl query type for Message
+- */
+-@Generated("com.querydsl.codegen.EntitySerializer")
+-public class QMessage extends EntityPathBase<Message> {
+-
+-    private static final long serialVersionUID = -120591150L;
+-
+-    private static final PathInits INITS = PathInits.DIRECT2;
+-
+-    public static final QMessage message = new QMessage("message");
+-
+-    public final QPerson addressee;
+-
+-    public final StringPath content = createString("content");
+-
+-    public final DatePath<java.time.LocalDate> createdDate = createDate("createdDate", java.time.LocalDate.class);
+-
+-    public final NumberPath<Long> id = createNumber("id", Long.class);
+-
+-    public final QPerson recipient;
+-
+-    public QMessage(String variable) {
+-        this(Message.class, forVariable(variable), INITS);
+-    }
+-
+-    public QMessage(Path<? extends Message> path) {
+-        this(path.getType(), path.getMetadata(), path.getMetadata().isRoot() ? INITS : PathInits.DEFAULT);
+-    }
+-
+-    public QMessage(PathMetadata metadata) {
+-        this(metadata, metadata.isRoot() ? INITS : PathInits.DEFAULT);
+-    }
+-
+-    public QMessage(PathMetadata metadata, PathInits inits) {
+-        this(Message.class, metadata, inits);
+-    }
+-
+-    public QMessage(Class<? extends Message> type, PathMetadata metadata, PathInits inits) {
+-        super(type, metadata, inits);
+-        this.addressee = inits.isInitialized("addressee") ? new QPerson(forProperty("addressee")) : null;
+-        this.recipient = inits.isInitialized("recipient") ? new QPerson(forProperty("recipient")) : null;
+-    }
+-
+-}
+-
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/compiler.xml b/.idea/compiler.xml
+deleted file mode 100644
+--- a/.idea/compiler.xml	(revision 1e27937a82105c647fc4ca9eeeab9bd9f5b3c4c5)
++++ /dev/null	(revision 1e27937a82105c647fc4ca9eeeab9bd9f5b3c4c5)
+@@ -1,18 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="CompilerConfiguration">
+-    <annotationProcessing>
+-      <profile name="Maven default annotation processors profile" enabled="true">
+-        <sourceOutputDir name="target/generated-sources/annotations" />
+-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+-        <outputRelativeToContentRoot value="true" />
+-        <module name="THK-backend" />
+-      </profile>
+-    </annotationProcessing>
+-  </component>
+-  <component name="JavacSettings">
+-    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+-      <module name="THK-backend" options="-parameters" />
+-    </option>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: .idea/encodings.xml
+===================================================================
+diff --git a/.idea/encodings.xml b/.idea/encodings.xml
+deleted file mode 100644
+--- a/.idea/encodings.xml	(revision 1e27937a82105c647fc4ca9eeeab9bd9f5b3c4c5)
++++ /dev/null	(revision 1e27937a82105c647fc4ca9eeeab9bd9f5b3c4c5)
+@@ -1,6 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="Encoding">
+-    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst b/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+deleted file mode 100644
+--- a/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst	(revision 1e27937a82105c647fc4ca9eeeab9bd9f5b3c4c5)
++++ /dev/null	(revision 1e27937a82105c647fc4ca9eeeab9bd9f5b3c4c5)
+@@ -1,31 +0,0 @@
+-com\thackathon\mim\thk\controller\PostController.class
+-com\thackathon\mim\thk\controller\CommentController.class
+-com\thackathon\mim\thk\controller\PersonController.class
+-com\thackathon\mim\thk\repository\PersonRepository.class
+-com\thackathon\mim\thk\service\JobService.class
+-com\thackathon\mim\thk\entity\Comment.class
+-com\thackathon\mim\thk\enums\SkillsEnum.class
+-com\thackathon\mim\thk\enums\GenderEnum.class
+-com\thackathon\mim\thk\service\PostService.class
+-com\thackathon\mim\thk\repository\JobRepository.class
+-com\thackathon\mim\thk\enums\JobTypeEnum.class
+-com\thackathon\mim\thk\repository\PostRepository.class
+-com\thackathon\mim\thk\Main.class
+-com\thackathon\mim\thk\entity\Job.class
+-com\thackathon\mim\thk\entity\QJob.class
+-com\thackathon\mim\thk\repository\MessageRepository.class
+-com\thackathon\mim\thk\service\PersonService.class
+-com\thackathon\mim\thk\enums\PersonTypeEnum.class
+-com\thackathon\mim\thk\service\CommentService.class
+-com\thackathon\mim\thk\exception\CustomException.class
+-com\thackathon\mim\thk\controller\JobController.class
+-com\thackathon\mim\thk\entity\Post.class
+-com\thackathon\mim\thk\controller\MessageController.class
+-com\thackathon\mim\thk\entity\QComment.class
+-com\thackathon\mim\thk\entity\Person.class
+-com\thackathon\mim\thk\service\MessageService.class
+-com\thackathon\mim\thk\repository\CommentRepository.class
+-com\thackathon\mim\thk\entity\QPerson.class
+-com\thackathon\mim\thk\entity\Message.class
+-com\thackathon\mim\thk\entity\QPost.class
+-com\thackathon\mim\thk\entity\QMessage.class
+Index: .idea/jpa-buddy.xml
+===================================================================
+diff --git a/.idea/jpa-buddy.xml b/.idea/jpa-buddy.xml
+deleted file mode 100644
+--- a/.idea/jpa-buddy.xml	(revision 1e27937a82105c647fc4ca9eeeab9bd9f5b3c4c5)
++++ /dev/null	(revision 1e27937a82105c647fc4ca9eeeab9bd9f5b3c4c5)
+@@ -1,7 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="JpaBuddyIdeaProjectConfig">
+-    <option name="defaultUnitInitialized" value="true" />
+-    <option name="renamerInitialized" value="true" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: target/maven-archiver/pom.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>ISO-8859-1
+===================================================================
+diff --git a/target/maven-archiver/pom.properties b/target/maven-archiver/pom.properties
+deleted file mode 100644
+--- a/target/maven-archiver/pom.properties	(revision 1e27937a82105c647fc4ca9eeeab9bd9f5b3c4c5)
++++ /dev/null	(revision 1e27937a82105c647fc4ca9eeeab9bd9f5b3c4c5)
+@@ -1,3 +0,0 @@
+-artifactId=THK-backend
+-groupId=org.example
+-version=1.0-SNAPSHOT
+Index: target/generated-sources/com/thackathon/mim/thk/entity/QPost.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/target/generated-sources/com/thackathon/mim/thk/entity/QPost.java b/target/generated-sources/com/thackathon/mim/thk/entity/QPost.java
+deleted file mode 100644
+--- a/target/generated-sources/com/thackathon/mim/thk/entity/QPost.java	(revision 1e27937a82105c647fc4ca9eeeab9bd9f5b3c4c5)
++++ /dev/null	(revision 1e27937a82105c647fc4ca9eeeab9bd9f5b3c4c5)
+@@ -1,65 +0,0 @@
+-package com.thackathon.mim.thk.entity;
+-
+-import static com.querydsl.core.types.PathMetadataFactory.*;
+-
+-import com.querydsl.core.types.dsl.*;
+-
+-import com.querydsl.core.types.PathMetadata;
+-import javax.annotation.Generated;
+-import com.querydsl.core.types.Path;
+-import com.querydsl.core.types.dsl.PathInits;
+-
+-
+-/**
+- * QPost is a Querydsl query type for Post
+- */
+-@Generated("com.querydsl.codegen.EntitySerializer")
+-public class QPost extends EntityPathBase<Post> {
+-
+-    private static final long serialVersionUID = -402860107L;
+-
+-    private static final PathInits INITS = PathInits.DIRECT2;
+-
+-    public static final QPost post = new QPost("post");
+-
+-    public final ListPath<Comment, QComment> commentList = this.<Comment, QComment>createList("commentList", Comment.class, QComment.class, PathInits.DIRECT2);
+-
+-    public final StringPath content = createString("content");
+-
+-    public final DatePath<java.time.LocalDate> createdDate = createDate("createdDate", java.time.LocalDate.class);
+-
+-    public final NumberPath<Long> id = createNumber("id", Long.class);
+-
+-    public final StringPath imageUrl = createString("imageUrl");
+-
+-    public final NumberPath<Long> likes = createNumber("likes", Long.class);
+-
+-    public final StringPath name = createString("name");
+-
+-    public final QPerson publisher;
+-
+-    public final BooleanPath visibility = createBoolean("visibility");
+-
+-    public QPost(String variable) {
+-        this(Post.class, forVariable(variable), INITS);
+-    }
+-
+-    public QPost(Path<? extends Post> path) {
+-        this(path.getType(), path.getMetadata(), path.getMetadata().isRoot() ? INITS : PathInits.DEFAULT);
+-    }
+-
+-    public QPost(PathMetadata metadata) {
+-        this(metadata, metadata.isRoot() ? INITS : PathInits.DEFAULT);
+-    }
+-
+-    public QPost(PathMetadata metadata, PathInits inits) {
+-        this(Post.class, metadata, inits);
+-    }
+-
+-    public QPost(Class<? extends Post> type, PathMetadata metadata, PathInits inits) {
+-        super(type, metadata, inits);
+-        this.publisher = inits.isInitialized("publisher") ? new QPerson(forProperty("publisher")) : null;
+-    }
+-
+-}
+-
+Index: target/classes/application.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>ISO-8859-1
+===================================================================
+diff --git a/target/classes/application.properties b/target/classes/application.properties
+deleted file mode 100644
+--- a/target/classes/application.properties	(revision 1e27937a82105c647fc4ca9eeeab9bd9f5b3c4c5)
++++ /dev/null	(revision 1e27937a82105c647fc4ca9eeeab9bd9f5b3c4c5)
+@@ -1,36 +0,0 @@
+-server.port = 8083
+-spring.application.name=esp
+-server.servlet.context-path=/${spring.application.name}/api
+-
+-spring.devtools.add-properties=false
+-
+-spring.h2.console.enabled=true
+-spring.datasource.driver-class-name=org.h2.Driver
+-spring.datasource.url=jdbc:h2:mem:ed;DB_CLOSE_DELAY=-1;
+-spring.datasource.username=sa
+-spring.datasource.password=
+-spring.sql.init.encoding=UTF-8
+-
+-#Vyuzitie postgres db
+-#spring.datasource.url=jdbc:postgresql://localhost:5432/edhackathon
+-#spring.datasource.username=postgres
+-#spring.datasource.password=ppp
+-#spring.datasource.driver-class-name=org.postgresql.Driver
+-#spring.datasource.hikari.maximumPoolSize=2
+-#spring.jpa.show-sql=true
+-#spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true
+-
+-elasticsearch.host = localhost
+-elasticsearch.port = 9200
+-elasticsearch.scheme = http
+-elasticsearch.credentials.username=elastic
+-elasticsearch.credentials.password=Bm_stSgbVR2HcAKToh2Z
+-
+-spring.artemis.mode=native
+-spring.artemis.host=localhost
+-spring.artemis.port=61616
+-spring.artemis.user=artemis
+-spring.artemis.password=simetraehcapa
+-
+-# Don't auto connect to JMS and pollute the program output repeatedly
+-#spring.jms.listener.auto-startup=false
+\ No newline at end of file
+Index: target/generated-sources/com/thackathon/mim/thk/entity/QJob.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/target/generated-sources/com/thackathon/mim/thk/entity/QJob.java b/target/generated-sources/com/thackathon/mim/thk/entity/QJob.java
+deleted file mode 100644
+--- a/target/generated-sources/com/thackathon/mim/thk/entity/QJob.java	(revision 1e27937a82105c647fc4ca9eeeab9bd9f5b3c4c5)
++++ /dev/null	(revision 1e27937a82105c647fc4ca9eeeab9bd9f5b3c4c5)
+@@ -1,57 +0,0 @@
+-package com.thackathon.mim.thk.entity;
+-
+-import static com.querydsl.core.types.PathMetadataFactory.*;
+-
+-import com.querydsl.core.types.dsl.*;
+-
+-import com.querydsl.core.types.PathMetadata;
+-import javax.annotation.Generated;
+-import com.querydsl.core.types.Path;
+-import com.querydsl.core.types.dsl.PathInits;
+-
+-
+-/**
+- * QJob is a Querydsl query type for Job
+- */
+-@Generated("com.querydsl.codegen.EntitySerializer")
+-public class QJob extends EntityPathBase<Job> {
+-
+-    private static final long serialVersionUID = -2091211256L;
+-
+-    private static final PathInits INITS = PathInits.DIRECT2;
+-
+-    public static final QJob job = new QJob("job");
+-
+-    public final QPerson companyContactPerson;
+-
+-    public final StringPath description = createString("description");
+-
+-    public final NumberPath<Long> id = createNumber("id", Long.class);
+-
+-    public final StringPath jobType = createString("jobType");
+-
+-    public final StringPath name = createString("name");
+-
+-    public QJob(String variable) {
+-        this(Job.class, forVariable(variable), INITS);
+-    }
+-
+-    public QJob(Path<? extends Job> path) {
+-        this(path.getType(), path.getMetadata(), path.getMetadata().isRoot() ? INITS : PathInits.DEFAULT);
+-    }
+-
+-    public QJob(PathMetadata metadata) {
+-        this(metadata, metadata.isRoot() ? INITS : PathInits.DEFAULT);
+-    }
+-
+-    public QJob(PathMetadata metadata, PathInits inits) {
+-        this(Job.class, metadata, inits);
+-    }
+-
+-    public QJob(Class<? extends Job> type, PathMetadata metadata, PathInits inits) {
+-        super(type, metadata, inits);
+-        this.companyContactPerson = inits.isInitialized("companyContactPerson") ? new QPerson(forProperty("companyContactPerson")) : null;
+-    }
+-
+-}
+-
+Index: .idea/vcs.xml
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+deleted file mode 100644
+--- a/.idea/vcs.xml	(revision 1e27937a82105c647fc4ca9eeeab9bd9f5b3c4c5)
++++ /dev/null	(revision 1e27937a82105c647fc4ca9eeeab9bd9f5b3c4c5)
+@@ -1,6 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="VcsDirectoryMappings">
+-    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: target/classes/import.sql
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/target/classes/import.sql b/target/classes/import.sql
+deleted file mode 100644
+--- a/target/classes/import.sql	(revision 1e27937a82105c647fc4ca9eeeab9bd9f5b3c4c5)
++++ /dev/null	(revision 1e27937a82105c647fc4ca9eeeab9bd9f5b3c4c5)
+@@ -1,30 +0,0 @@
+-Insert into person (id, name, lastname, email, password, type) values (1, 'Janko', 'Hrasko', 'hrasko.janko@gmail.com', 'hackathon', 'Expert');
+-Insert into person (id, name, lastname, email, password, type) values (2, 'Fridrich', 'Hrasko', 'hrasko.fridrich@gmail.com', 'hackathon', 'Expert');
+-Insert into person (id, name, lastname, email, password, type) values (3, 'Peter', 'Fazulka', 'fazulka.peter@gmail.com', 'hackathon', 'Študent');
+-Insert into person (id, name, lastname, email, password, type) values (4, 'Juraj', 'Mrkvicka', 'mrkvicka.juraj@gmail.com', 'hackathon', 'Pedagóg');
+-Insert into person (id, name, lastname, email, password, type) values (5, 'Gejza', 'Imre', 'imre.gejza@gmail.com', 'hackathon', 'Firma');
+-
+-Insert into post (id, name, content, image_url, likes, created_date, visibility, publisher_id) values (1,'New verzia angular','','https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png',4526,'2022-10-08',false,1);
+-Insert into post (id, name, content, image_url, likes, created_date, visibility, publisher_id) values (2,'Spring boot s december update','','https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Spring_Framework_Logo_2018.svg/800px-Spring_Framework_Logo_2018.svg.png',56123,'2022-11-08',true,1);
+-Insert into post (id, name, content, image_url, likes, created_date, visibility, publisher_id) values (3,'JDK 19 - Java ...','','https://azpanel.azilen.com/uploads/everything_must_know_spring_boot_application_scratch_12_8c4e62d4fe.jpg',12056,'2022-11-20',false,2);
+-Insert into post (id, name, content, image_url, likes, created_date, visibility, publisher_id) values (4,'How to Monitor Container Memory and CPU Usage in Docker Desktop','','https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png',2123,'2022-12-01',true,2);
+-Insert into post (id, name, content, image_url, likes, created_date, visibility, publisher_id) values (5,'Need help with Quartz jobs - University research','','https://upload.wikimedia.org/wikipedia/commons/5/54/TUKE_logo.jpg',20,'2022-09-14',true,4);
+-
+-Insert into person_skills (person_id, skills) values (1 , 'ANGULAR');
+-Insert into person_skills (person_id, skills) values (1 , 'JAVA');
+-Insert into person_skills (person_id, skills) values (1 , 'SPRINGBOOT');
+-Insert into person_skills (person_id, skills) values (2 , 'SPRINGBOOT');
+-Insert into person_skills (person_id, skills) values (2 , 'DOCKER');
+-Insert into person_skills (person_id, skills) values (2 , 'GIT');
+-Insert into person_skills (person_id, skills) values (3 , 'C');
+-Insert into person_skills (person_id, skills) values (3 , 'GIT');
+-Insert into person_skills (person_id, skills) values (4 , 'DOCKER');
+-
+-Insert into job (id, name, description, job_type, company_contact_person_id) values (1, 'Junior Java developer', 'java, spring', 'polovičný pracovný úväzok', 5);
+-Insert into job (id, name, description, job_type, company_contact_person_id) values (2, 'Medior Java developer', 'oracle', 'plný pracovný úväzok', 5);
+-Insert into job (id, name, description, job_type, company_contact_person_id) values (3, 'Senior Java developer', 'java, hibernate, git, ...', 'plný pracovný úväzok', 5);
+-Insert into job (id, name, description, job_type, company_contact_person_id) values (4, 'Devops developer', 'lens, git, devops, docker', 'stáž', 5);
+-Insert into job (id, name, description, job_type, company_contact_person_id) values (5, 'FE developer', 'react, react native, js, ..', 'polovičný pracovný úväzok', 5);
+-Insert into job (id, name, description, job_type, company_contact_person_id) values (6, 'Angular developer', 'angular, git, ide, ...', 'plný pracovný úväzok', 5);
+-Insert into job (id, name, description, job_type, company_contact_person_id) values (7, 'Analytik', 'Jira, Teams, Enterprise architect, ...', 'plný pracovný úväzok', 5);
+-Insert into job (id, name, description, job_type, company_contact_person_id) values (8, 'Junior Angular developer', 'angular, ide, chut pracovat', 'brigáda', 5);
+\ No newline at end of file
+Index: .idea/.gitignore
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+deleted file mode 100644
+--- a/.idea/.gitignore	(revision 1e27937a82105c647fc4ca9eeeab9bd9f5b3c4c5)
++++ /dev/null	(revision 1e27937a82105c647fc4ca9eeeab9bd9f5b3c4c5)
+@@ -1,8 +0,0 @@
+-# Default ignored files
+-/shelf/
+-/workspace.xml
+-# Editor-based HTTP Client requests
+-/httpRequests/
+-# Datasource local storage ignored files
+-/dataSources/
+-/dataSources.local.xml
+Index: ../frontend/t-hackathon/src/app/main-page/post-detail/post-detail.component.ts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import { Component, OnDestroy, OnInit } from '@angular/core';\r\nimport { Subscription } from 'rxjs';\r\nimport { Post } from 'src/app/shared/model/post.model';\r\nimport { MainService } from 'src/app/shared/service/main-service.service';\r\n\r\n@Component({\r\n  selector: 'app-post-detail',\r\n  templateUrl: './post-detail.component.html',\r\n  styleUrls: ['./post-detail.component.scss']\r\n})\r\nexport class PostDetailComponent implements OnInit, OnDestroy {\r\n  currentPost$: Post ;\r\n  currentPostSubs: Subscription;\r\n\r\n  constructor(private mainService: MainService) { }\r\n\r\n  ngOnInit(): void {\r\n    this.currentPostSubs = this.mainService.currentPostState$.subscribe(post => {\r\n      this.currentPost$ = post;\r\n      console.log(this.currentPost$.publisher.skills);\r\n      \r\n    })\r\n  }\r\n\r\n  ngOnDestroy(): void {\r\n      this.currentPostSubs.unsubscribe();\r\n  }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../frontend/t-hackathon/src/app/main-page/post-detail/post-detail.component.ts b/../frontend/t-hackathon/src/app/main-page/post-detail/post-detail.component.ts
+--- a/../frontend/t-hackathon/src/app/main-page/post-detail/post-detail.component.ts	(revision 1e27937a82105c647fc4ca9eeeab9bd9f5b3c4c5)
++++ b/../frontend/t-hackathon/src/app/main-page/post-detail/post-detail.component.ts	(date 1670113691409)
+@@ -17,8 +17,7 @@
+   ngOnInit(): void {
+     this.currentPostSubs = this.mainService.currentPostState$.subscribe(post => {
+       this.currentPost$ = post;
+-      console.log(this.currentPost$.publisher.skills);
+-      
++      // console.log(this.currentPost$.publisher.skills);
+     })
+   }
+ 
+Index: ../frontend/t-hackathon/src/app/shared/service/main-service.service.ts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import { Injectable } from '@angular/core';\r\nimport { BehaviorSubject, map, Observable, tap } from 'rxjs';\r\nimport { DataService } from 'src/app/core/service/data.service';\r\nimport { Post } from 'src/app/shared/model/post.model';\r\nimport { environment } from '../../../environments/environment';\r\n\r\n@Injectable({\r\n  providedIn: 'root',\r\n})\r\nexport class MainService {\r\n  apiURL = environment.restApi;\r\n\r\n  private readonly _postSource = new BehaviorSubject<Post[]>([]);\r\n  readonly postState$ = this._postSource.asObservable();\r\n\r\n  //current country\r\n  private readonly _currentPost = new BehaviorSubject<Post>(null);\r\n  readonly currentPostState$ = this._currentPost.asObservable();\r\n\r\n  setPostState(state: Post[]): void {\r\n    this._postSource.next(state);\r\n  }\r\n\r\n  setCurrentPost(currentPost: Post): void {\r\n    this._currentPost.next(currentPost);\r\n  }\r\n\r\n  constructor(private readonly dataService: DataService) {}\r\n\r\n  getPublicPosts(): Observable<Post[]> {\r\n    return this.dataService.get<Post[]>(`${this.apiURL}post/list?visibility=false&postType=true`).pipe(\r\n      map((res) => {\r\n         console.log(res);\r\n        return res;\r\n      }),\r\n      tap((res) => {\r\n        this.setPostState(res);\r\n      })\r\n    );\r\n  }\r\n  getAllPosts(): Observable<Post[]> {\r\n    return this.dataService.get<Post[]>(`${this.apiURL}post/list?postType=true`).pipe(\r\n      map((res) => {\r\n          console.log(res);\r\n        return res;\r\n      }),\r\n      tap((res) => {\r\n        this.setPostState(res);\r\n      })\r\n    );\r\n  }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../frontend/t-hackathon/src/app/shared/service/main-service.service.ts b/../frontend/t-hackathon/src/app/shared/service/main-service.service.ts
+--- a/../frontend/t-hackathon/src/app/shared/service/main-service.service.ts	(revision 1e27937a82105c647fc4ca9eeeab9bd9f5b3c4c5)
++++ b/../frontend/t-hackathon/src/app/shared/service/main-service.service.ts	(date 1670113895420)
+@@ -3,6 +3,7 @@
+ import { DataService } from 'src/app/core/service/data.service';
+ import { Post } from 'src/app/shared/model/post.model';
+ import { environment } from '../../../environments/environment';
++import { Publisher } from '../model/publisher.model';
+ 
+ @Injectable({
+   providedIn: 'root',
+@@ -17,36 +18,64 @@
+   private readonly _currentPost = new BehaviorSubject<Post>(null);
+   readonly currentPostState$ = this._currentPost.asObservable();
+ 
++  //current user
++  private readonly _currentUser = new BehaviorSubject<Publisher>(null);
++  readonly currentUserState$ = this._currentUser.asObservable();
++
+   setPostState(state: Post[]): void {
+     this._postSource.next(state);
+   }
+ 
++  setCurrentUser(user: Publisher): void {
++    this._currentUser.next(user);
++  }
++
+   setCurrentPost(currentPost: Post): void {
+     this._currentPost.next(currentPost);
+   }
+ 
+   constructor(private readonly dataService: DataService) {}
+ 
++  getUser(): Observable<Publisher> {
++    return this.dataService
++      .get<Publisher>(
++        `${this.apiURL}person/login?email=fazulka.peter@gmail.com&password=hackathon`
++      )
++      .pipe(
++        map((res) => {
++          // console.log(res);
++          return res;
++        }),
++        tap((res) => {
++          this.setCurrentUser(res);
++        })
++      );
++  }
++
+   getPublicPosts(): Observable<Post[]> {
+-    return this.dataService.get<Post[]>(`${this.apiURL}post/list?visibility=false&postType=true`).pipe(
+-      map((res) => {
+-         console.log(res);
+-        return res;
+-      }),
+-      tap((res) => {
+-        this.setPostState(res);
+-      })
+-    );
++    return this.dataService
++      .get<Post[]>(`${this.apiURL}post/list?visibility=false&postType=true`)
++      .pipe(
++        map((res) => {
++          // console.log(res);
++          return res;
++        }),
++        tap((res) => {
++          this.setPostState(res);
++        })
++      );
+   }
+   getAllPosts(): Observable<Post[]> {
+-    return this.dataService.get<Post[]>(`${this.apiURL}post/list?postType=true`).pipe(
+-      map((res) => {
+-          console.log(res);
+-        return res;
+-      }),
+-      tap((res) => {
+-        this.setPostState(res);
+-      })
+-    );
++    return this.dataService
++      .get<Post[]>(`${this.apiURL}post/list?postType=true`)
++      .pipe(
++        map((res) => {
++          // console.log(res);
++          return res;
++        }),
++        tap((res) => {
++          this.setPostState(res);
++        })
++      );
+   }
+ }
+Index: ../frontend/t-hackathon/src/app/login/login.component.ts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import { Component, OnDestroy, OnInit } from '@angular/core';\r\nimport { MainService } from '../shared/service/main-service.service';\r\nimport { FormGroup, FormControl } from '@angular/forms';\r\nimport { Observable, Subscription } from 'rxjs';\r\nimport { Post } from '../shared/model/post.model';\r\nimport { Router } from '@angular/router';\r\n\r\n@Component({\r\n  selector: 'app-login',\r\n  templateUrl: './login.component.html',\r\n  styleUrls: ['./login.component.scss'],\r\n})\r\nexport class LoginComponent implements OnInit, OnDestroy {\r\n  loginForm?: FormGroup;\r\n  userName: String;\r\n\r\n  posts$: Observable<Post[]> = this.loginService.postState$;\r\n\r\n  postsSubs: Subscription;\r\n\r\n  constructor(private loginService: MainService, private router: Router) {}\r\n\r\n  ngOnInit(): void {\r\n    this.loginForm = new FormGroup({\r\n      userName: new FormControl(''),\r\n      pass: new FormControl(''),\r\n    });\r\n\r\n    this.postsSubs = this.loginService.getPublicPosts().subscribe();\r\n  }\r\n\r\n  onClickLogin(data: any): void {\r\n    this.router.navigateByUrl('/mainPage/allPosts');\r\n    \r\n  }\r\n\r\n  ngOnDestroy(): void {\r\n    this.postsSubs.unsubscribe();\r\n  }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../frontend/t-hackathon/src/app/login/login.component.ts b/../frontend/t-hackathon/src/app/login/login.component.ts
+--- a/../frontend/t-hackathon/src/app/login/login.component.ts	(revision 1e27937a82105c647fc4ca9eeeab9bd9f5b3c4c5)
++++ b/../frontend/t-hackathon/src/app/login/login.component.ts	(date 1670113691409)
+@@ -4,6 +4,7 @@
+ import { Observable, Subscription } from 'rxjs';
+ import { Post } from '../shared/model/post.model';
+ import { Router } from '@angular/router';
++import { Publisher } from '../shared/model/publisher.model';
+ 
+ @Component({
+   selector: 'app-login',
+@@ -15,8 +16,8 @@
+   userName: String;
+ 
+   posts$: Observable<Post[]> = this.loginService.postState$;
+-
+   postsSubs: Subscription;
++  userSubs: Subscription;
+ 
+   constructor(private loginService: MainService, private router: Router) {}
+ 
+@@ -27,11 +28,12 @@
+     });
+ 
+     this.postsSubs = this.loginService.getPublicPosts().subscribe();
++    // console.log(this.posts$);
+   }
+ 
+   onClickLogin(data: any): void {
++    this.userSubs = this.loginService.getUser().subscribe();
+     this.router.navigateByUrl('/mainPage/allPosts');
+-    
+   }
+ 
+   ngOnDestroy(): void {
+Index: ../frontend/t-hackathon/src/app/main-page/main-page.component.ts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import { Component, OnInit } from '@angular/core';\r\nimport { Router } from '@angular/router';\r\nimport { Observable, Subscription } from 'rxjs';\r\nimport { Post } from '../shared/model/post.model';\r\nimport {  MainService } from '../shared/service/main-service.service';\r\n\r\n@Component({\r\n  selector: 'app-main-page',\r\n  templateUrl: './main-page.component.html',\r\n  styleUrls: ['./main-page.component.scss']\r\n})\r\nexport class MainPageComponent implements OnInit {\r\n  posts$: Observable<Post[]> = this.loginService.postState$;\r\n\r\n  postsSubs: Subscription;\r\n\r\n  constructor(private loginService: MainService, private router: Router ) { }\r\n\r\n  ngOnInit(): void {\r\n    this.postsSubs = this.loginService.getAllPosts().subscribe();\r\n  }\r\n\r\n  openPostDetail(){\r\n    console.log(\"ahoj\");\r\n    this.router.navigateByUrl('/mainPage/postDetail');\r\n  }\r\n\r\n  onLogout(){\r\n    this.router.navigateByUrl('/login');\r\n  }\r\n\r\n  findExpert(){\r\n    this.router.navigateByUrl('/mainPage/findExpert');\r\n  }\r\n\r\n  findJob(){\r\n    this.router.navigateByUrl('/mainPage/findJob');\r\n  }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../frontend/t-hackathon/src/app/main-page/main-page.component.ts b/../frontend/t-hackathon/src/app/main-page/main-page.component.ts
+--- a/../frontend/t-hackathon/src/app/main-page/main-page.component.ts	(revision 1e27937a82105c647fc4ca9eeeab9bd9f5b3c4c5)
++++ b/../frontend/t-hackathon/src/app/main-page/main-page.component.ts	(date 1670113730929)
+@@ -2,30 +2,36 @@
+ import { Router } from '@angular/router';
+ import { Observable, Subscription } from 'rxjs';
+ import { Post } from '../shared/model/post.model';
+-import {  MainService } from '../shared/service/main-service.service';
++import { Publisher } from '../shared/model/publisher.model';
++import { MainService } from '../shared/service/main-service.service';
+ 
+ @Component({
+   selector: 'app-main-page',
+   templateUrl: './main-page.component.html',
+-  styleUrls: ['./main-page.component.scss']
++  styleUrls: ['./main-page.component.scss'],
+ })
+ export class MainPageComponent implements OnInit {
+   posts$: Observable<Post[]> = this.loginService.postState$;
+-
+   postsSubs: Subscription;
+ 
+-  constructor(private loginService: MainService, private router: Router ) { }
++  user$: Publisher;
++  userSubs: Subscription;
++
++  constructor(private loginService: MainService, private router: Router) {}
+ 
+   ngOnInit(): void {
+     this.postsSubs = this.loginService.getAllPosts().subscribe();
++    this.userSubs = this.loginService.currentUserState$.subscribe((user) => {
++      this.user$ = user;
++      console.log(user);
++    });
+   }
+ 
+-  openPostDetail(){
+-    console.log("ahoj");
++  openPostDetail() {
+     this.router.navigateByUrl('/mainPage/postDetail');
+   }
+ 
+-  onLogout(){
++  onLogout() {
+     this.router.navigateByUrl('/login');
+   }
+ 
+Index: ../frontend/t-hackathon/src/app/main-page/main-page.component.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><div class=\"heading\">\r\n  <h1><span>Catch Them All</span> - Portál</h1>\r\n  <div class=\"menu-container\">\r\n\r\n    <div class=\"menu-item\">\r\n      <a class=\"home\">Domov</a>\r\n      <img src=\"../../assets/img/home-icon.png\" alt=\"\" />\r\n    </div>\r\n\r\n    <div class=\"menu-item\">\r\n      <a class=\"home\">Vytvor Príspevok</a>\r\n      <img src=\"../../assets/img/home-icon.png\" alt=\"\" />\r\n    </div>\r\n\r\n\r\n    <div class=\"menu-item\">\r\n      <a (click)=\"findExpert()\" class=\"home\">Najdi Experta</a>\r\n      <img src=\"../../assets/img/home-icon.png\" alt=\"\" />\r\n    </div>\r\n\r\n    <div class=\"menu-item\">\r\n      <a (click)=\"findJob()\" class=\"home\">Najdi Pracu</a>\r\n      <img src=\"../../assets/img/home-icon.png\" alt=\"\" />\r\n    </div>\r\n   \r\n   \r\n  </div>\r\n  <div class=\"logout-container\">\r\n    <a (click)=\"onLogout()\">Odhlásiť sa</a>\r\n  </div>\r\n</div>\r\n<hr class=\"login-line\" />\r\n<div class=\"main-container\">\r\n  <router-outlet></router-outlet>\r\n\r\n  <div class=\"login-container\">\r\n    <img src=\"../../assets/img/miso.png\" alt=\"\">\r\n    <i class=\"camerabtn fa fa-camera\" aria-hidden=\"true\"></i>\r\n    <h3 class=\"meno\"> EXPERT: <br><span>Rudo Pepuch</span></h3>\r\n    <hr>\r\n    <h2 class=\"somedata\">EMAIL:<br> <span>rudo@gmail.com</span></h2>\r\n    <h2 class=\"somedata\">SKILL:<br><span>cigan, pravy naskakovac, traktorista</span></h2>\r\n    <button>Uprav  <i class=\"fa fa-pencil\" aria-hidden=\"true\"></i></button>\r\n  </div>\r\n\r\n</div>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../frontend/t-hackathon/src/app/main-page/main-page.component.html b/../frontend/t-hackathon/src/app/main-page/main-page.component.html
+--- a/../frontend/t-hackathon/src/app/main-page/main-page.component.html	(revision 1e27937a82105c647fc4ca9eeeab9bd9f5b3c4c5)
++++ b/../frontend/t-hackathon/src/app/main-page/main-page.component.html	(date 1670113691409)
+@@ -33,13 +33,13 @@
+ <div class="main-container">
+   <router-outlet></router-outlet>
+ 
+-  <div class="login-container">
++  <div class="login-container" *ngIf="user$!=null">
+     <img src="../../assets/img/miso.png" alt="">
+     <i class="camerabtn fa fa-camera" aria-hidden="true"></i>
+-    <h3 class="meno"> EXPERT: <br><span>Rudo Pepuch</span></h3>
++    <h3 class="meno"> {{user$.type}}: <br><span>{{user$.name}} {{user$.lastname}}</span></h3>
+     <hr>
+-    <h2 class="somedata">EMAIL:<br> <span>rudo@gmail.com</span></h2>
+-    <h2 class="somedata">SKILL:<br><span>cigan, pravy naskakovac, traktorista</span></h2>
++    <h2 class="somedata">EMAIL:<br> <span>{{user$.email}}</span></h2>
++    <h2 class="somedata">SKILL:<br><span *ngFor="let skill of user$.skills" >{{skill}}, </span></h2>
+     <button>Uprav  <i class="fa fa-pencil" aria-hidden="true"></i></button>
+   </div>
+ 
+diff --git a/target/classes/META-INF/MANIFEST.MF b/target/classes/META-INF/MANIFEST.MF
+deleted file mode 100644

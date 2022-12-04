@@ -81,7 +81,7 @@
   
   .likeM{
     right: 70px;
-    bottom: 20px;
+    bottom: 18px;
     color: $top_nav;
   }
   
@@ -89,17 +89,20 @@
  
   .rola{
     position: absolute;
-    bottom: 20px;
+    bottom: 18px;
     left: 80px;
     color: black;
-  
+  }
 
-    span{
+    .meno{
+      position: absolute;
       font-family: "mulish";
+      left: 140px;
+      bottom: 18px;
       color: $top_nav;
     }
 
-  }
+  
 
   .user{
     position: absolute;

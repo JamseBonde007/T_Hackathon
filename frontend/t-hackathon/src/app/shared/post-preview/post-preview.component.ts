@@ -1,3 +1,5 @@
+import { _isNumberValue } from '@angular/cdk/coercion';
+import { PortalHostDirective } from '@angular/cdk/portal';
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Post } from '../model/post.model';
@@ -10,6 +12,7 @@ import { MainService } from '../service/main-service.service';
 })
 export class LoginPostComponent implements OnInit {
   @Input() post: Post;
+
   constructor(private mainService: MainService, private router: Router) {}
 
   ngOnInit(): void {}
@@ -19,7 +22,36 @@ export class LoginPostComponent implements OnInit {
     this.router.navigateByUrl('/mainPage/postDetail');
   }
 
-  onLikeClicked(){
+  onLikeClicked(id){
     this.mainService.getLikeInterested().subscribe();
+    const like = document.getElementById(id);
+    console.log(like.ariaHidden);
+
+    if(like.ariaHidden == 'true'){ 
+      like.classList.remove('fa-heart-o');
+      like.classList.add('fa-heart');
+      const likeComp = document.getElementsByClassName(id)[0];
+      let pocet=likeComp.textContent;
+      let num = Number(pocet);
+      num++;
+      let str = String(num);
+      likeComp.textContent=str;
+      like.setAttribute('aria-hidden', 'false');
+    }
+    else if(like.ariaHidden == 'false'){ 
+      like.classList.remove('fa-heart');
+      like.classList.add('fa-heart-o');
+      const likeComp = document.getElementsByClassName(id)[0];
+      let pocet=likeComp.textContent;
+      let num = Number(pocet);
+      num--;
+      let str = String(num);
+      likeComp.textContent=str;
+      like.setAttribute('aria-hidden', 'true');
+    }
+    
+
+    
+
   }
 }
