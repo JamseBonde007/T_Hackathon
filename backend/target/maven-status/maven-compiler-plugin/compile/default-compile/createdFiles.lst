@@ -1,9 +1,11 @@
 com\thackathon\mim\thk\controller\PostController.class
+com\thackathon\mim\thk\entity\PersonPostLikes.class
 com\thackathon\mim\thk\controller\CommentController.class
 com\thackathon\mim\thk\controller\PersonController.class
 com\thackathon\mim\thk\repository\PersonRepository.class
 com\thackathon\mim\thk\service\JobService.class
 com\thackathon\mim\thk\entity\Comment.class
+com\thackathon\mim\thk\repository\PersonPostLikesRepository.class
 com\thackathon\mim\thk\enums\SkillsEnum.class
 com\thackathon\mim\thk\enums\GenderEnum.class
 com\thackathon\mim\thk\service\PostService.class
@@ -13,6 +15,7 @@ com\thackathon\mim\thk\repository\PostRepository.class
 com\thackathon\mim\thk\Main.class
 com\thackathon\mim\thk\entity\Job.class
 com\thackathon\mim\thk\entity\QJob.class
+com\thackathon\mim\thk\service\JobService$1.class
 com\thackathon\mim\thk\repository\MessageRepository.class
 com\thackathon\mim\thk\service\PersonService.class
 com\thackathon\mim\thk\enums\PersonTypeEnum.class
@@ -20,6 +23,7 @@ com\thackathon\mim\thk\service\CommentService.class
 com\thackathon\mim\thk\exception\CustomException.class
 com\thackathon\mim\thk\controller\JobController.class
 com\thackathon\mim\thk\entity\Post.class
+com\thackathon\mim\thk\entity\QPersonPostLikes.class
 com\thackathon\mim\thk\controller\MessageController.class
 com\thackathon\mim\thk\entity\QComment.class
 com\thackathon\mim\thk\entity\Person.class

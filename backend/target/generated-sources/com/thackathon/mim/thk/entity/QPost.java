@@ -36,6 +36,8 @@ public class QPost extends EntityPathBase<Post> {
 
     public final StringPath name = createString("name");
 
+    public final BooleanPath postType = createBoolean("postType");
+
     public final QPerson publisher;
 
     public final BooleanPath visibility = createBoolean("visibility");
