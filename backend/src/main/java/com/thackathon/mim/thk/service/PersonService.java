@@ -1,6 +1,7 @@
 package com.thackathon.mim.thk.service;
 
 import com.querydsl.core.BooleanBuilder;
+import com.thackathon.mim.thk.entity.Message;
 import com.thackathon.mim.thk.entity.Person;
 import com.thackathon.mim.thk.entity.QPerson;
 import com.thackathon.mim.thk.enums.PersonTypeEnum;
@@ -55,6 +56,6 @@ public class PersonService {
     }
 
     public void processNotification(String payload) {
-        log.info(payload);
+        log.warn(payload);
     }
 }
