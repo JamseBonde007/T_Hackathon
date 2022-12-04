@@ -2,8 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { AllPostsComponent } from './main-page/all-posts/all-posts.component';
-import { FindExpertComponent } from './main-page/find-expert/find-expert.component';
-import { FindJobComponent } from './main-page/find-job/find-job.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { PostDetailComponent } from './main-page/post-detail/post-detail.component';
 
@@ -17,12 +15,6 @@ const routes: Routes = [
     },
     {
       path: 'postDetail', component: PostDetailComponent
-    },
-    {
-      path: 'findExpert', component: FindExpertComponent
-    },
-    {
-      path: 'findJob', component: FindJobComponent
     }
   ]   
 }

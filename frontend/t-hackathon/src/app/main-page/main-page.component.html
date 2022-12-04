@@ -11,18 +11,6 @@
       <a class="home">Vytvor Príspevok</a>
       <img src="../../assets/img/home-icon.png" alt="" />
     </div>
-
-
-    <div class="menu-item">
-      <a (click)="findExpert()" class="home">Najdi Experta</a>
-      <img src="../../assets/img/home-icon.png" alt="" />
-    </div>
-
-    <div class="menu-item">
-      <a (click)="findJob()" class="home">Najdi Pracu</a>
-      <img src="../../assets/img/home-icon.png" alt="" />
-    </div>
-   
    
   </div>
   <div class="logout-container">
@@ -33,13 +21,13 @@
 <div class="main-container">
   <router-outlet></router-outlet>
 
-  <div class="login-container">
+  <div class="login-container" *ngIf="user$!=null">
     <img src="../../assets/img/miso.png" alt="">
     <i class="camerabtn fa fa-camera" aria-hidden="true"></i>
-    <h3 class="meno"> EXPERT: <br><span>Rudo Pepuch</span></h3>
+    <h3 class="meno"> {{user$.type}}: <br><span>{{user$.name}} {{user$.lastname}}</span></h3>
     <hr>
-    <h2 class="somedata">EMAIL:<br> <span>rudo@gmail.com</span></h2>
-    <h2 class="somedata">SKILL:<br><span>cigan, pravy naskakovac, traktorista</span></h2>
+    <h2 class="somedata">EMAIL:<br> <span>{{user$.email}}</span></h2>
+    <h2 class="somedata">SKILL:<br><span *ngFor="let skill of user$.skills" >{{skill}}, </span></h2>
     <button>Uprav  <i class="fa fa-pencil" aria-hidden="true"></i></button>
   </div>
 

@@ -17,8 +17,7 @@ export class PostDetailComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.currentPostSubs = this.mainService.currentPostState$.subscribe(post => {
       this.currentPost$ = post;
-      console.log(this.currentPost$.publisher.skills);
-      
+      // console.log(this.currentPost$.publisher.skills);
     })
   }
 
