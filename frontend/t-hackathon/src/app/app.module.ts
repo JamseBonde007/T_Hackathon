@@ -18,6 +18,7 @@ import { CommonModule } from '@angular/common';
 import { FindJobComponent } from './main-page/find-job/find-job.component';
 import { FindExpertComponent } from './main-page/find-expert/find-expert.component';
 import { JobPreviewComponent } from './main-page/find-job/job-preview/job-preview.component';
+import { ExpertPreviewComponent } from './main-page/find-expert/expert-preview/expert-preview.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { JobPreviewComponent } from './main-page/find-job/job-preview/job-previe
     FindJobComponent,
     FindExpertComponent,
     JobPreviewComponent,
+    ExpertPreviewComponent,
   ],
   imports: [
     CommonModule,

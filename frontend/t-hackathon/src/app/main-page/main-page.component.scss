@@ -16,8 +16,26 @@
   padding: 40px;
   border-bottom: 1px solid $post_card;
 
+.logo{
+  width: 20%;
+  margin: 10px;
+}
+
+  
   a{
     cursor: pointer;
+    padding: 30px;
+    font-size: 17px;
+  }
+
+  .active{
+    border-bottom: 2px solid black;
+    
+    }
+  
+
+  a:hover{
+    border-bottom: 2px solid black;
   }
 
   h1 {
@@ -44,10 +62,9 @@
       transform: scale(1.1);
     }
   
-    a{
-      padding: 100
+    
       
-    };
+    
   }
 
   
