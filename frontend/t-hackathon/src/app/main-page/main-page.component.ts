@@ -35,4 +35,19 @@ export class MainPageComponent implements OnInit {
     this.router.navigateByUrl('/login');
     
   }
+
+  home() {
+    this.router.navigateByUrl('/mainPage/allPosts');
+    
+  }
+
+  findExpert() {
+    this.router.navigateByUrl('/mainPage/findExpert');
+    
+  }
+
+  findJob() {
+    this.router.navigateByUrl('/mainPage/findJob');
+    
+  }
 }
