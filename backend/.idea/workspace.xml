@@ -4,65 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ea52739-ad89-4d8d-996d-50b09e0dc32e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/THK-backend-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thackathon/mim/thk/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thackathon/mim/thk/controller/CommentController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thackathon/mim/thk/controller/JobController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thackathon/mim/thk/controller/MessageController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thackathon/mim/thk/controller/PersonController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thackathon/mim/thk/controller/PostController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thackathon/mim/thk/entity/Comment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thackathon/mim/thk/entity/Job.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thackathon/mim/thk/entity/Message.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thackathon/mim/thk/entity/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thackathon/mim/thk/entity/PersonPostLikes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thackathon/mim/thk/entity/Post.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thackathon/mim/thk/entity/QComment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thackathon/mim/thk/entity/QJob.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thackathon/mim/thk/entity/QMessage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thackathon/mim/thk/entity/QPerson.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thackathon/mim/thk/entity/QPersonPostLikes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thackathon/mim/thk/entity/QPost.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thackathon/mim/thk/enums/GenderEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thackathon/mim/thk/enums/JobTypeEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thackathon/mim/thk/enums/PersonTypeEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thackathon/mim/thk/enums/SkillsEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thackathon/mim/thk/exception/CustomException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thackathon/mim/thk/repository/CommentRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thackathon/mim/thk/repository/JobRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thackathon/mim/thk/repository/MessageRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thackathon/mim/thk/repository/PersonPostLikesRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thackathon/mim/thk/repository/PersonRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thackathon/mim/thk/repository/PostRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thackathon/mim/thk/service/CommentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thackathon/mim/thk/service/JobService$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thackathon/mim/thk/service/JobService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thackathon/mim/thk/service/MessageService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thackathon/mim/thk/service/PersonService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thackathon/mim/thk/service/PostService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/import.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/com/thackathon/mim/thk/entity/QComment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/com/thackathon/mim/thk/entity/QJob.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/com/thackathon/mim/thk/entity/QMessage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/com/thackathon/mim/thk/entity/QPerson.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/com/thackathon/mim/thk/entity/QPersonPostLikes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/com/thackathon/mim/thk/entity/QPost.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-    </list>
+    <list default="true" id="9ea52739-ad89-4d8d-996d-50b09e0dc32e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
