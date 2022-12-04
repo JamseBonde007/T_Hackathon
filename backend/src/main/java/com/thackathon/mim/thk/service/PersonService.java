@@ -42,6 +42,9 @@ public class PersonService {
 
     public List<Person> findExperts(Pageable pageable, List<String> skills) {
         List<SkillsEnum> skillsEnums = new ArrayList<>();
+        if (skills == null){
+            return personRepository.findAll(pageable).getContent();
+        }
         skills.forEach(s -> {
             for (SkillsEnum value : SkillsEnum.values()) {
                 if (value.value().equals(s)){
