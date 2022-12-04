@@ -1,6 +1,6 @@
 <div class="content">
 
-  <form>
+
     <mat-form-field>
       <mat-label>Vyber si typ pracovného pomeru</mat-label>
       <mat-select
@@ -14,7 +14,7 @@
       </mat-select>
     </mat-form-field>
     <!-- <p *ngIf="selectedSkill">Selected region: {{ selectedSkill }}</p> -->
-  </form>
+
 
   <div class="job-preview-container">
     <app-job-preview *ngFor="let job of jobs$ | async" [job]="job"></app-job-preview>
