@@ -4,10 +4,10 @@
     <hr>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio deleniti obcaecati quod minus ex eveniet sapiente in sunt architecto, corporis facere qui quos omnis fuga. Harum, dolore provident. Accusantium ad quae provident! Eos iusto doloremque sequi vel similique dolorem, ipsam quia consequatur eum, tenetur officia officiis deserunt veritatis aperiam nulla?</p>
     <img class="user" src="../../../assets/img/miso.png" alt="">
-    <h3 class="rola">   {{post.publisher.type}}: <span>{{post.publisher.name}}</span></h3>
+    <h3> <span class="rola">{{post.publisher.type}}:</span> <span class="meno">{{post.publisher.name}}</span></h3>
   </div>
   
-  <h3 class="like likeM">{{post.likes}}</h3>
-  <i class="like fa fa-heart-o" aria-hidden="true" (click)="onLikeClicked()"></i>
+  <h3 ><samp class="{{post.id}} like likeM">{{post.likes}}</samp></h3>
+  <i id={{post.id}} class="like fa fa-heart-o" aria-hidden="true" (click)="onLikeClicked(post.id)"></i>
   <img class="img" src={{post.imageUrl}} alt="">
 </div>

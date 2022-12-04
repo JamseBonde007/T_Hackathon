@@ -30,8 +30,11 @@
   <div class="login-container" *ngIf="user$!=null">
     <img src="../../assets/img/miso.png" alt="">
     <i class="camerabtn fa fa-camera" aria-hidden="true"></i>
-    <h3 class="meno">{{user$.type}}: <br><span>{{user$.name}} {{user$.lastname}}</span></h3>
+    <br>
+    <br>
+    <h3 ><span class="co">{{user$.type}}:</span> <br><span class="meno">{{user$.name}} {{user$.lastname}}</span></h3>
     <hr>
+    <br>
     <h2 class="somedata">EMAIL:<br> <span>{{user$.email}}</span></h2>
     <h2 class="somedata">SKILL:<br> <span *ngFor="let skill of user$.skills" >{{skill}}, </span></h2>
     <button>Uprav  <i class="fa fa-pencil" aria-hidden="true"></i></button>
