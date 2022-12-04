@@ -29,4 +29,12 @@ export class MainPageComponent implements OnInit {
     this.router.navigateByUrl('/login');
   }
 
+  findExpert(){
+    this.router.navigateByUrl('/mainPage/findExpert');
+  }
+
+  findJob(){
+    this.router.navigateByUrl('/mainPage/findJob');
+  }
+
 }

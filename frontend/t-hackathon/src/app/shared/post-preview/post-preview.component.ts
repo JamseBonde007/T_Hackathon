@@ -18,4 +18,15 @@ export class LoginPostComponent implements OnInit {
     this.mainService.setCurrentPost(this.post);
     this.router.navigateByUrl('/mainPage/postDetail');
   }
+
+  changeLike(): void{
+    const element = <HTMLElement> document.getElementsByClassName('fa-heart-o')[0];
+    
+    element.classList.remove("fa-heart-o"); 
+    element.classList.add("fa-heart"); 
+
+   }
+  
+
 }
+

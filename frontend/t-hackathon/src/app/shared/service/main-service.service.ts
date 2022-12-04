@@ -28,7 +28,7 @@ export class MainService {
   constructor(private readonly dataService: DataService) {}
 
   getPublicPosts(): Observable<Post[]> {
-    return this.dataService.get<Post[]>(`${this.apiURL}post/list?visibility=false`).pipe(
+    return this.dataService.get<Post[]>(`${this.apiURL}post/list?visibility=false&postType=true`).pipe(
       map((res) => {
          console.log(res);
         return res;
@@ -39,7 +39,7 @@ export class MainService {
     );
   }
   getAllPosts(): Observable<Post[]> {
-    return this.dataService.get<Post[]>(`${this.apiURL}post/list`).pipe(
+    return this.dataService.get<Post[]>(`${this.apiURL}post/list?postType=true`).pipe(
       map((res) => {
           console.log(res);
         return res;

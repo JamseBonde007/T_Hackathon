@@ -2,12 +2,17 @@
 @import "../../../lib/shared_styles/_font.scss";
 
 
-
+.post-container:hover{
+  border: 3px solid $post_card;
+}
 
 
 
 .post-container {
   width: 100%;
+  cursor: pointer;
+  transition: 0.3s;
+  
 
   background-color: white;
   margin: auto;
@@ -42,9 +47,11 @@
 
   .content{
     width: 70%;
-  
+    
 
   }
+
+
 
   p{
     color: $text;
