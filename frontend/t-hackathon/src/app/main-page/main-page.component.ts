@@ -27,7 +27,7 @@ export class MainPageComponent implements OnInit {
 
   onLogout(){
     this.router.navigateByUrl('/login');
-    this.userSubs.unsubscribe();
+    
   }
 
   findExpert(){
