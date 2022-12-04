@@ -1,6 +1,7 @@
 package com.thackathon.mim.thk.service;
 
 import com.querydsl.core.BooleanBuilder;
+import com.thackathon.mim.thk.entity.Message;
 import com.thackathon.mim.thk.entity.Person;
 import com.thackathon.mim.thk.entity.QPerson;
 import com.thackathon.mim.thk.enums.PersonTypeEnum;
@@ -8,6 +9,8 @@ import com.thackathon.mim.thk.enums.SkillsEnum;
 import com.thackathon.mim.thk.exception.CustomException;
 import com.thackathon.mim.thk.repository.PersonRepository;
 import lombok.NonNull;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
@@ -17,6 +20,7 @@ import java.util.List;
 @Service
 public class PersonService {
 
+    private final Logger log = LoggerFactory.getLogger(PersonService.class);
     private final PersonRepository personRepository;
 
     public PersonService(@NonNull final PersonRepository personRepository){
@@ -49,5 +53,9 @@ public class PersonService {
         skillsEnums.forEach(s -> builder.or(QPerson.person.skills.contains(s)));
         builder.and(QPerson.person.type.eq(PersonTypeEnum.EXPERT.value()));
         return personRepository.findAll(builder, pageable).getContent();
+    }
+
+    public void processNotification(String payload) {
+        log.warn(payload);
     }
 }
