@@ -18,4 +18,8 @@ export class LoginPostComponent implements OnInit {
     this.mainService.setCurrentPost(this.post);
     this.router.navigateByUrl('/mainPage/postDetail');
   }
+
+  onLikeClicked(){
+    this.mainService.getLikeInterested().subscribe();
+  }
 }

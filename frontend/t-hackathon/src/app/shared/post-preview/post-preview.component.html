@@ -1,5 +1,4 @@
 <div class="post-container">
-
   <div class="content" (click)="setCurrentPost()">
     <h2>{{post.name}}</h2>
     <hr>
@@ -9,6 +8,6 @@
   </div>
   
   <h3 class="like likeM">{{post.likes}}</h3>
-  <i class="like fa fa-heart-o" aria-hidden="true"></i>
+  <i class="like fa fa-heart-o" aria-hidden="true" (click)="onLikeClicked()"></i>
   <img class="img" src={{post.imageUrl}} alt="">
 </div>
