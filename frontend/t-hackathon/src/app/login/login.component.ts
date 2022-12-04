@@ -4,6 +4,7 @@ import { FormGroup, FormControl } from '@angular/forms';
 import { Observable, Subscription } from 'rxjs';
 import { Post } from '../shared/model/post.model';
 import { Router } from '@angular/router';
+import { Publisher } from '../shared/model/publisher.model';
 
 @Component({
   selector: 'app-login',
@@ -15,8 +16,8 @@ export class LoginComponent implements OnInit, OnDestroy {
   userName: String;
 
   posts$: Observable<Post[]> = this.loginService.postState$;
-
   postsSubs: Subscription;
+  userSubs: Subscription;
 
   constructor(private loginService: MainService, private router: Router) {}
 
@@ -27,11 +28,12 @@ export class LoginComponent implements OnInit, OnDestroy {
     });
 
     this.postsSubs = this.loginService.getPublicPosts().subscribe();
+    // console.log(this.posts$);
   }
 
   onClickLogin(data: any): void {
+    this.userSubs = this.loginService.getUser().subscribe();
     this.router.navigateByUrl('/mainPage/allPosts');
-    
   }
 
   ngOnDestroy(): void {
