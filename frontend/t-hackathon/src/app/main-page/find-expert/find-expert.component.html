@@ -12,7 +12,14 @@
           <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
         </mat-select>
       </mat-form-field>
-
       <i (click)="postSkill()" (keyup.enter)="postSkill()" class=" searchbtn fa fa-search" aria-hidden="true"></i>
+
+      <div class="job-preview-container">
+        <app-expert-preview></app-expert-preview>
+        <app-expert-preview></app-expert-preview>
+        <app-expert-preview></app-expert-preview>
+        <app-expert-preview></app-expert-preview>
+        <app-expert-preview></app-expert-preview>
+      </div>
     
 </div>

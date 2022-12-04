@@ -12,6 +12,7 @@ import { FormControl } from '@angular/forms';
 export class FindExpertComponent implements OnInit {
 
   toppings = new FormControl('');
+  skills;
 
   toppingList: string[] = ['Java', 'Spring boot', 'Angular', 'C', 'React', 'Postgres', 'Docker', 'Ux', 'Ui', 'Git'];
   constructor() { }
@@ -21,7 +22,7 @@ export class FindExpertComponent implements OnInit {
 
 
   postSkill(){
-    console.log(this.toppings.value);
+    this.skills = this.toppings.value;
   }
 
 }
