@@ -1,1 +1,19 @@
-<p>job-preview works!</p>
+<div class="job-container">
+
+  
+  <div class="content" >
+    <div class="heading-button-container">
+      <h1>{{job.name}}</h1>
+      <button (click)="onClickApply()">Uchádzať Sa</button>
+    </div>
+    <hr class="line-1">
+    <h3>Popis práce a techológií</h3>
+    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, alias in accusamus repellendus debitis commodi iusto nisi! Odit veritatis suscipit quaerat quidem odio, soluta non quibusdam. Distinctio repellat rerum vero!{{job.description}}</p>
+
+    <div class="type-mentor-container">
+      <p class="jobtype">Typ pracovného pomeru: <span>{{job.jobType}}</span></p>
+      <p class="mentor">MENTOR: <span>{{job.companyContactPerson.name}} {{job.companyContactPerson.lastname}}</span></p>
+
+    </div>
+  </div>
+</div>

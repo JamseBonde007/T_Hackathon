@@ -26,6 +26,10 @@ export class MainService {
   private readonly _currentUser = new BehaviorSubject<Publisher>(null);
   readonly currentUserState$ = this._currentUser.asObservable();
 
+  //current user
+  private readonly _likeSource = new BehaviorSubject<any>(null);
+  readonly likeState$ = this._likeSource.asObservable();
+
   setPostState(state: Post[]): void {
     this._postSource.next(state);
   }
@@ -40,6 +44,10 @@ export class MainService {
 
   setCurrentPost(currentPost: Post): void {
     this._currentPost.next(currentPost);
+  }
+
+  setLikeState(like: any): void {
+    this._likeSource.next(like);
   }
 
   constructor(private readonly dataService: DataService) {}
@@ -74,7 +82,6 @@ export class MainService {
       );
   }
 
-
   getAllPosts(): Observable<Post[]> {
     return this.dataService
       .get<Post[]>(`${this.apiURL}post/list?postType=true`)
@@ -88,7 +95,6 @@ export class MainService {
         })
       );
   }
-
 
   getAllJobs(): Observable<Job[]> {
     return this.dataService
@@ -116,5 +122,11 @@ export class MainService {
           this.setJobState(res);
         })
       );
+  }
+
+  getLikeInterested(): Observable<any> {
+    return this.dataService
+      .get<any>(`${this.apiURL}post/like?person_id=3&post_id=2&like=true`)
+      
   }
 }
