@@ -12,4 +12,8 @@ export class ExpertPreviewComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onClickApply(){
+    
+  }
+
 }
