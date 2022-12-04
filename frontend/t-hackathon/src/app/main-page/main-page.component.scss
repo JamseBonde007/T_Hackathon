@@ -44,9 +44,9 @@
       transform: scale(1.1);
     }
   
-    .home{
-      margin-right: 30px;
-      font-size: 25px
+    a{
+      padding: 100
+      
     };
   }
 
@@ -136,6 +136,7 @@ text-align: center;
     span{
       color: white;
       font-size: 25px;
+    
       
     }
   }
@@ -198,4 +199,8 @@ text-align: center;
     
   }
 
+}
+
+.logo{
+  
 }

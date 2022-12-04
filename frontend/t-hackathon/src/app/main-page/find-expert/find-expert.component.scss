@@ -2,5 +2,19 @@
     width: 63vw;
   height: 80vh;
   overflow: scroll;
-  border: 1px solid black;
+ 
+ 
+}
+
+mat-form-field{
+    width: 70%;
+    margin-left: 10%;
+    border-radius: 8px;
+}
+
+.searchbtn{
+    font-size: 35px;
+    margin-left:30px;
+    cursor: pointer;
+    margin-top: 5px;
 }

@@ -1,25 +1,21 @@
 <div class="heading">
-  <h1>Logo</h1>
+  <h1 class="logo">Logo</h1>
   <div class="menu-container">
 
     <div class="menu-item">
       <a (click)="home()" class="home">Domov</a>
-      <img src="../../assets/img/home-icon.png" alt="" />
     </div>
 
     <div class="menu-item">
       <a class="home">Vytvor Príspevok</a>
-      <img src="../../assets/img/home-icon.png" alt="" />
     </div>
 
     <div class="menu-item">
       <a (click)="findExpert()" class="home">Vyhladaj experta</a>
-      <img src="../../assets/img/home-icon.png" alt="" />
     </div>
 
     <div class="menu-item">
       <a  (click)="findJob()" class="home">Najdi pracu</a>
-      <img src="../../assets/img/home-icon.png" alt="" />
     </div>
    
   </div>
@@ -34,10 +30,10 @@
   <div class="login-container" *ngIf="user$!=null">
     <img src="../../assets/img/miso.png" alt="">
     <i class="camerabtn fa fa-camera" aria-hidden="true"></i>
-    <h3 class="meno"> {{user$.type}}: <br><span>{{user$.name}} {{user$.lastname}}</span></h3>
+    <h3 class="meno">{{user$.type}}: <br><span>{{user$.name}} {{user$.lastname}}</span></h3>
     <hr>
     <h2 class="somedata">EMAIL:<br> <span>{{user$.email}}</span></h2>
-    <h2 class="somedata">SKILL:<br><span *ngFor="let skill of user$.skills" >{{skill}}, </span></h2>
+    <h2 class="somedata">SKILL:<br> <span *ngFor="let skill of user$.skills" >{{skill}}, </span></h2>
     <button>Uprav  <i class="fa fa-pencil" aria-hidden="true"></i></button>
   </div>
 
