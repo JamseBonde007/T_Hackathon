@@ -11,23 +11,38 @@ import { PostDetailComponent } from './main-page/post-detail/post-detail.compone
 import { HeaderComponent } from './main-page/header/header.component';
 import { AllPostsComponent } from './main-page/all-posts/all-posts.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatNativeDateModule } from '@angular/material/core';
 import {MatSelectModule} from '@angular/material/select';
-import { FindExpertComponent } from './main-page/find-expert/find-expert.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
 import { FindJobComponent } from './main-page/find-job/find-job.component';
-
-
-
+import { FindExpertComponent } from './main-page/find-expert/find-expert.component';
+import { JobPreviewComponent } from './main-page/find-job/job-preview/job-preview.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginPostComponent, LoginComponent, MainPageComponent, PostDetailComponent, HeaderComponent, AllPostsComponent,FindExpertComponent,FindJobComponent],
+  declarations: [
+    AppComponent,
+    LoginPostComponent,
+    LoginComponent,
+    MainPageComponent,
+    PostDetailComponent,
+    HeaderComponent,
+    AllPostsComponent,
+    FindJobComponent,
+    FindExpertComponent,
+    JobPreviewComponent,
+  ],
   imports: [
+    CommonModule,
     BrowserModule,
     AppRoutingModule,
     CoreModule,
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    MatSelectModule,
+    MatNativeDateModule,
+    HttpClientModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent],

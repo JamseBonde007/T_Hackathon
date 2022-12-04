@@ -3,6 +3,7 @@ import { BehaviorSubject, map, Observable, tap } from 'rxjs';
 import { DataService } from 'src/app/core/service/data.service';
 import { Post } from 'src/app/shared/model/post.model';
 import { environment } from '../../../environments/environment';
+import { Job } from '../model/job.model';
 import { Publisher } from '../model/publisher.model';
 
 @Injectable({
@@ -13,6 +14,9 @@ export class MainService {
 
   private readonly _postSource = new BehaviorSubject<Post[]>([]);
   readonly postState$ = this._postSource.asObservable();
+  // all jobs
+  private readonly _jobSource = new BehaviorSubject<Job[]>([]);
+  readonly jobState$ = this._jobSource.asObservable();
 
   //current country
   private readonly _currentPost = new BehaviorSubject<Post>(null);
@@ -24,6 +28,10 @@ export class MainService {
 
   setPostState(state: Post[]): void {
     this._postSource.next(state);
+  }
+
+  setJobState(state: Job[]): void {
+    this._jobSource.next(state);
   }
 
   setCurrentUser(user: Publisher): void {
@@ -65,6 +73,8 @@ export class MainService {
         })
       );
   }
+
+
   getAllPosts(): Observable<Post[]> {
     return this.dataService
       .get<Post[]>(`${this.apiURL}post/list?postType=true`)
@@ -75,6 +85,35 @@ export class MainService {
         }),
         tap((res) => {
           this.setPostState(res);
+        })
+      );
+  }
+
+
+  getAllJobs(): Observable<Job[]> {
+    return this.dataService
+      .get<Job[]>(`${this.apiURL}job/find?person_id=3`)
+      .pipe(
+        map((res) => {
+          // console.log(res);
+          return res;
+        }),
+        tap((res) => {
+          this.setJobState(res);
+        })
+      );
+  }
+
+  getInterestedJob(jobType: String): Observable<Job[]> {
+    return this.dataService
+      .get<Job[]>(`${this.apiURL}job/find?person_id=3&jobType=${jobType}`)
+      .pipe(
+        map((res) => {
+          // console.log(res);
+          return res;
+        }),
+        tap((res) => {
+          this.setJobState(res);
         })
       );
   }

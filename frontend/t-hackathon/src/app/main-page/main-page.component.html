@@ -6,7 +6,7 @@
       <a (click)="home()" class="home">Domov</a>
     </div>
 
-    <div class="menu-item">
+    <div *ngIf="user$.type != 'Študent'" class="menu-item">
       <a class="home">Vytvor Príspevok</a>
     </div>
 
