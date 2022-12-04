@@ -36,7 +36,7 @@ public class PersonController {
     }
 
     @GetMapping("/findExperts")
-    public ResponseEntity<List<Person>> findExperts(Pageable pageable, @RequestParam List<String> skills){
+    public ResponseEntity<List<Person>> findExperts(Pageable pageable, @RequestParam(required = false) List<String> skills){
         return ResponseEntity.ok(personService.findExperts(pageable, skills));
     }
 }
