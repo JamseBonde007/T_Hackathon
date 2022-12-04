@@ -2,78 +2,76 @@
 @import "../../../../lib/shared_styles/_font.scss";
 
 .expert-container {
-  width: 98%;
+  width: 95%;
   background-color: white;
   margin: auto;
   padding: 20px 20px 10px 20px;
   position: relative;
-  border: 1px solid $post_card;
-  margin-bottom: 10px;
+  // border: 1px solid $post_card;
+  margin-bottom: 30px;
   border-radius: 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 
-  .line-1{
+  .line-1 {
     width: 60%;
     border: 1px solid $post_card;
-
   }
-  .content{
+  .content {
     width: 55vw;
   }
 
-  .skills-container{
+  .skills-container {
     display: flex;
 
-    p{
+    p {
       margin-right: 20px;
     }
   }
 
-  .type-mentor-container{
-
+  .type-mentor-container {
     display: flex;
     justify-content: space-between;
 
-    p{
+    p {
       font-size: 20px;
     }
 
     .jobtype {
       text-transform: uppercase;
 
-      span{
+      span {
         text-transform: lowercase;
         color: rgb(161, 13, 161);
         font-size: 25px;
       }
     }
 
-    .mentor{
-      span{
-
+    .mentor {
+      span {
       }
     }
   }
 
-  p{
+  p {
     color: $text;
     margin-bottom: 20px;
   }
 
-  .heading-button-container{
+  .heading-button-container {
     display: flex;
     align-items: center;
 
-    h1{
+    h1 {
       color: black;
       font-family: "mulish-bold";
       margin-bottom: 0px;
-    
     }
 
-    button{
-        position: absolute;
-        right:25px;
-      background-color: green;
+    button {
+      position: absolute;
+      right: 25px;
+      background-color: #cf1092;
       width: auto;
       height: auto;
       padding: 10px;
@@ -84,35 +82,22 @@
       transition: 0.3s ease-in-out;
     }
 
-    button:hover{
+    button:hover {
       transform: scale(1.04);
     }
   }
 
-
-
-  h3{
+  h3 {
     font-size: 20px;
     font-family: "mulish-bold";
     margin-top: 20px;
   }
 
-
-
-
-  .user{
+  .user {
     display: block;
     left: 20px;
     bottom: 10px;
     width: 40px;
     margin: 16px;
   }
-
-
-
-
-
-
-
-
 }

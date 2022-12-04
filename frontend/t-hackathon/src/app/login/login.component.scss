@@ -2,6 +2,7 @@
 @import "../../lib/shared_styles/_font.scss";
 
 
+
 .heading {
   background-color: white;
   width: 100vw;
@@ -18,14 +19,8 @@
   border-bottom: 1px solid $post_card;
 
   h1 {
-    color: $top_nav;
-    font-family: "mulish-italic";
-    margin-top: 20px;
-    span {
-      font-size: 40px;
-      text-transform: uppercase;
-      float: left;
-    }
+    width: 20%;
+    margin: 10px;
   }
 }
 
@@ -50,19 +45,22 @@
   }
 
   .login-container {
-    background-color: $login;
+    background-color: transparent;
     width: 30vw;
     height: 80vh;
+    
     border-radius: 8px;
-    // background-color: green;
-    //box-shadow: rgba(100, 100, 111, 0.2) 0px 10px 29px 0px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     text-align: center;
+    background-image: url(../../assets/img/background.png);
+    background-size: cover;
 
     h2 {
       margin: 40px;
       color: white;
       margin-left: 60%;
       font-family: "mulish-bold";
+      font-size: 50px;
     }
 
     input[type="text"],
@@ -85,11 +83,11 @@
       float: left;
       margin: 10px;
       margin-top: 30px;
-      font-size: 17px;
+      font-size: 22px;
     }
 
     input[type="submit"] {
-      background-color: $neznam;
+      background-color: rgba(0, 0, 0, 0.685);
       color: white;
       width: 40%;
       border: none;
@@ -97,6 +95,8 @@
       margin-top: 30px;
       margin-bottom: 7px;
       font-size: 17px;
+      border-radius: 8px;
+      cursor: pointer;
     }
 
     a {
