@@ -16,25 +16,22 @@
   padding: 40px;
   border-bottom: 1px solid $post_card;
 
-.logo{
-  width: 20%;
-  margin: 10px;
-}
+  .logo {
+    width: 20%;
+    margin: 10px;
+  }
 
-  
-  a{
+  a {
     cursor: pointer;
     padding: 30px;
     font-size: 17px;
   }
 
-  .active{
+  .active {
     border-bottom: 2px solid black;
-    
-    }
-  
+  }
 
-  a:hover{
+  a:hover {
     border-bottom: 2px solid black;
   }
 
@@ -48,26 +45,19 @@
     }
   }
 
-  .menu-container{
-
+  .menu-container {
     display: flex;
     padding-right: 10%;
 
-    img{
+    img {
       width: 30px;
       transition: 0.3s ease-in-out;
       margin-right: 50px;
     }
-    img:hover{
+    img:hover {
       transform: scale(1.1);
     }
-  
-    
-      
-    
   }
-
-  
 }
 
 .main-container {
@@ -98,8 +88,10 @@
     // background-color: green;
     //box-shadow: rgba(100, 100, 111, 0.2) 0px 10px 29px 0px;
     text-align: center;
-
- 
+    background-image: url(../../assets/img/background.png);
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    text-align: center;
 
     input[type="text"],
     input[type="password"] {
@@ -140,59 +132,51 @@
   }
 }
 
+.login-container {
+  position: relative;
+  text-align: center;
 
-.login-container{
-position: relative;
-text-align: center;
+  .co {
+    font-size: 30px;
+    margin-top: 10px;
+    color: black;
+    text-shadow: rgb(255, 255, 254) 1px 1px 5px;
+  }
 
+  .meno {
+    color: white;
+    font-size: 25px;
+  }
 
-.co{
-  font-size: 18px;
-  margin-top: 10px;
-  color: black;
-}
-
-   
-
-    .meno{
-      color: white;
-      font-size: 25px;
-    
-      
-    }
-  
-
-
-  .somedata{
+  .somedata {
     font-size: 18px;
     margin-top: 10px;
     color: black;
+    text-shadow: rgb(255, 255, 254) 1px 1px 5px;
     max-width: 90%;
     margin: auto;
     margin: 20px;
-    
 
-    span{
+    span {
       color: white;
       font-size: 18px;
-      
+      text-shadow: none;
     }
   }
 
-  hr{
-    border:1px solid white;
+  hr {
+    border: 1px solid white;
     margin: 10px;
     margin-bottom: 40px;
     margin-top: 15px;
   }
 
-
-  img{
+  img {
     width: 30%;
     margin-top: 30px;
   }
 
-  .camerabtn{
+  .camerabtn {
     color: white;
     position: absolute;
     top: 120px;
@@ -201,7 +185,7 @@ text-align: center;
     cursor: pointer;
   }
 
-  button{
+  button {
     position: absolute;
     bottom: 20px;
     right: 10px;
@@ -212,16 +196,13 @@ text-align: center;
     cursor: pointer;
     color: white;
     transition: 0.1s ease-in-out;
-    color: #2F3336;
+    color: #2f3336;
   }
 
-  button:hover{
-    border-bottom: 2px solid #2F3336;
-    
+  button:hover {
+    border-bottom: 2px solid #2f3336;
   }
-
 }
 
-.logo{
-  
+.logo {
 }

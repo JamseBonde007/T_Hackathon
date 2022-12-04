@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="9ea52739-ad89-4d8d-996d-50b09e0dc32e" name="Changes" comment="" />
+=======
     <list default="true" id="f3bb8b5c-3bc1-4cc4-b6c3-d5d1190fcda3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/t-hackathon/src/app/shared/post-preview/post-preview.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/t-hackathon/src/app/shared/post-preview/post-preview.component.scss" afterDir="false" />
     </list>
+>>>>>>> 4d61b59a4f31f8f9a15ee08b9fecbfb54f8c3aa9
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

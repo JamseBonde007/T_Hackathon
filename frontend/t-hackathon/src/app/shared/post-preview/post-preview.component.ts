@@ -27,7 +27,7 @@ export class LoginPostComponent implements OnInit {
     const like = document.getElementById(id);
     console.log(like.ariaHidden);
 
-    if(like.ariaHidden == 'true'){ 
+    if(like.ariaHidden == undefined){ 
       like.classList.remove('fa-heart-o');
       like.classList.add('fa-heart');
       const likeComp = document.getElementsByClassName(id)[0];
@@ -37,8 +37,9 @@ export class LoginPostComponent implements OnInit {
       let str = String(num);
       likeComp.textContent=str;
       like.setAttribute('aria-hidden', 'false');
+      like.ariaHidden = 'true'
     }
-    else if(like.ariaHidden == 'false'){ 
+    else if(like.ariaHidden != undefined){ 
       like.classList.remove('fa-heart');
       like.classList.add('fa-heart-o');
       const likeComp = document.getElementsByClassName(id)[0];
@@ -48,6 +49,7 @@ export class LoginPostComponent implements OnInit {
       let str = String(num);
       likeComp.textContent=str;
       like.setAttribute('aria-hidden', 'true');
+      like.ariaHidden = undefined;
     }
     
 
