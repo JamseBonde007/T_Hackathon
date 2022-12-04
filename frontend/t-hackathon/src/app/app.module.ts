@@ -11,11 +11,9 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { PostDetailComponent } from './main-page/post-detail/post-detail.component';
 import { HeaderComponent } from './main-page/header/header.component';
 import { AllPostsComponent } from './main-page/all-posts/all-posts.component';
-import { FindExpertComponent } from './main-page/find-expert/find-expert.component';
-import { FindJobComponent } from './main-page/find-job/find-job.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginPostComponent, LoginComponent, MainPageComponent, PostDetailComponent, HeaderComponent, AllPostsComponent, FindExpertComponent, FindJobComponent],
+  declarations: [AppComponent, LoginPostComponent, LoginComponent, MainPageComponent, PostDetailComponent, HeaderComponent, AllPostsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
