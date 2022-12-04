@@ -32,8 +32,11 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   onClickLogin(data: any): void {
-    this.userSubs = this.loginService.getUser().subscribe();
+    this.userSubs = this.loginService
+      .getUser(this.loginForm.value.userName)
+      .subscribe();
     this.router.navigateByUrl('/mainPage/allPosts');
+    // console.log(this.loginForm.value.userName);
   }
 
   ngOnDestroy(): void {
