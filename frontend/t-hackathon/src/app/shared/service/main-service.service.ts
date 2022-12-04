@@ -30,8 +30,16 @@ export class MainService {
   private readonly _likeSource = new BehaviorSubject<any>(null);
   readonly likeState$ = this._likeSource.asObservable();
 
+  //current experts
+  private readonly _expertsSource = new BehaviorSubject<any>(null);
+  readonly expertsState$ = this._expertsSource.asObservable();
+
   setPostState(state: Post[]): void {
     this._postSource.next(state);
+  }
+
+  setExpertState(state: Publisher[]): void {
+    this._expertsSource.next(state);
   }
 
   setJobState(state: Job[]): void {
@@ -52,10 +60,10 @@ export class MainService {
 
   constructor(private readonly dataService: DataService) {}
 
-  getUser(): Observable<Publisher> {
+  getUser(email: string): Observable<Publisher> {
     return this.dataService
       .get<Publisher>(
-        `${this.apiURL}person/login?email=fazulka.peter@gmail.com&password=hackathon`
+        `${this.apiURL}person/login?email=${email}&password=hackathon`
       )
       .pipe(
         map((res) => {
@@ -125,8 +133,36 @@ export class MainService {
   }
 
   getLikeInterested(): Observable<any> {
+    return this.dataService.get<any>(
+      `${this.apiURL}post/like?person_id=3&post_id=2&like=true`
+    );
+  }
+
+  getAllExperts(): Observable<Publisher[]> {
     return this.dataService
-      .get<any>(`${this.apiURL}post/like?person_id=3&post_id=2&like=true`)
-      
+      .get<Publisher[]>(`${this.apiURL}person/findExperts`)
+      .pipe(
+        map((res) => {
+          // console.log(res);
+          return res;
+        }),
+        tap((res) => {
+          this.setExpertState(res);
+        })
+      );
+  }
+
+  getInterestedExperts(interests: string): Observable<Publisher[]> {
+    return this.dataService
+      .get<Publisher[]>(`${this.apiURL}person/findExperts?skills=${interests}`)
+      .pipe(
+        map((res) => {
+          // console.log(res);
+          return res;
+        }),
+        tap((res) => {
+          this.setExpertState(res);
+        })
+      );
   }
 }

@@ -10,11 +10,11 @@
       <a (click)="createPost()" class="btn home">Vytvor Príspevok</a>
     </div>
 
-    <div class="menu-item">
+    <div *ngIf="user$.type != 'Expert'" class="menu-item">
       <a (click)="findExpert()" class="btn home">Vyhladaj experta</a>
     </div>
 
-    <div class="menu-item">
+    <div *ngIf="user$.type == 'Študent'" class="menu-item">
       <a  (click)="findJob()" class="btn home">Najdi pracu</a>
     </div>
    

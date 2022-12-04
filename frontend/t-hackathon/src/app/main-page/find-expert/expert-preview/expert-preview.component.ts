@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Publisher } from 'src/app/shared/model/publisher.model';
 
 @Component({
   selector: 'app-expert-preview',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExpertPreviewComponent implements OnInit {
 
+  @Input() expert: Publisher
   constructor() { }
 
   ngOnInit(): void {

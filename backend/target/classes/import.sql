@@ -3,12 +3,14 @@ Insert into person (id, name, lastname, email, password, type) values (2, 'Fridr
 Insert into person (id, name, lastname, email, password, type) values (3, 'Peter', 'Fazulka', 'fazulka.peter@gmail.com', 'hackathon', 'Študent');
 Insert into person (id, name, lastname, email, password, type) values (4, 'Juraj', 'Mrkvicka', 'mrkvicka.juraj@gmail.com', 'hackathon', 'Pedagóg');
 Insert into person (id, name, lastname, email, password, type) values (5, 'Gejza', 'Imre', 'imre.gejza@gmail.com', 'hackathon', 'Firma');
+Insert into person (id, name, lastname, email, password, type) values (6, 'Rudolf', 'Vesely', 'vesely.rudolf@gmail.com', 'hackathon', 'Expert');
 
 Insert into post (id, name, content, image_url, likes, created_date, visibility, publisher_id, post_type) values (1,'New verzia angular','','https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png',4526,'2022-10-08',false,1,true);
 Insert into post (id, name, content, image_url, likes, created_date, visibility, publisher_id, post_type) values (2,'R spring boot s december update & angular, java','','https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Spring_Framework_Logo_2018.svg/800px-Spring_Framework_Logo_2018.svg.png',56123,'2022-11-08',true,1,true);
 Insert into post (id, name, content, image_url, likes, created_date, visibility, publisher_id, post_type) values (3,'JDK 19 - Java ...','','https://azpanel.azilen.com/uploads/everything_must_know_spring_boot_application_scratch_12_8c4e62d4fe.jpg',12056,'2022-11-20',false,2,true);
 Insert into post (id, name, content, image_url, likes, created_date, visibility, publisher_id, post_type) values (4,'How to Monitor Container Memory and CPU Usage in Docker Desktop','','https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png',2123,'2022-12-01',true,2,true);
-Insert into post (id, name, content, image_url, likes, created_date, visibility, publisher_id, post_type) values (5,'Need help with Quartz jobs - University research','','https://upload.wikimedia.org/wikipedia/commons/5/54/TUKE_logo.jpg',20,'2022-09-14',true,4,true);
+Insert into post (id, name, content, image_url, likes, created_date, visibility, publisher_id, post_type) values (5,'The Arduino Raspberry Pi Pico/RP2040-Ethernet V2.1.1','','https://hackster.imgix.net/uploads/attachments/1496800/_gxlwwsgQva.blob?auto=compress%2Cformat&w=900&h=675&fit=min',8453,'2022-12-04',true,6,true);
+Insert into post (id, name, content, image_url, likes, created_date, visibility, publisher_id, post_type) values (6,'Need help with Quartz jobs - University research','','https://upload.wikimedia.org/wikipedia/commons/5/54/TUKE_logo.jpg',20,'2022-09-14',true,4,false);
 
 Insert into person_skills (person_id, skills) values (1 , 'ANGULAR');
 Insert into person_skills (person_id, skills) values (1 , 'JAVA');
